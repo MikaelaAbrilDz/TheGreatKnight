@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Shield" format=3 uid="uid://cts5xdsye0j1r"]
+
+[ext_resource type="Script" uid="uid://ckiaueptwpugt" path="res://Scripts/Resources/Knight/Equipment/Shields/Shield.gd" id="1_ru77d"]
+[ext_resource type="Texture2D" uid="uid://bknj5ldam7m7o" path="res://Sprites/Items/Shield_ShieldOfTheGoddess.png" id="2_4x2ch"]
+
+[resource]
+script = ExtResource("1_ru77d")
+price = 190
+priceIsInDollars = true
+name = "Shield of the Goddess"
+addedDefense = 12
+addedHealing = 20
+visual = ExtResource("2_4x2ch")
+metadata/_custom_type_script = "uid://ckiaueptwpugt"

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Sword" format=3 uid="uid://covk1rmdo37kp"]
+
+[ext_resource type="Script" uid="uid://bll4h77mlrw3s" path="res://Scripts/Resources/Knight/Equipment/Swords/Sword.gd" id="1_vdaw3"]
+[ext_resource type="Texture2D" uid="uid://cfxcdpc52cqho" path="res://Sprites/Items/Sword_BasicSword.png" id="2_i0asb"]
+
+[resource]
+script = ExtResource("1_vdaw3")
+name = "Basic sword"
+visual = ExtResource("2_i0asb")
+metadata/_custom_type_script = "uid://bll4h77mlrw3s"

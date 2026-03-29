@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Enemy" format=3 uid="uid://cbnxpaswsw4cv"]
+
+[ext_resource type="Script" uid="uid://dd638hjl806t2" path="res://Scripts/Resources/Knight/Enemies/Enemy.gd" id="1_f3lmr"]
+
+[resource]
+script = ExtResource("1_f3lmr")
+name = "SKELETON"
+life = 500
+damage = 23
+speed = 4.5

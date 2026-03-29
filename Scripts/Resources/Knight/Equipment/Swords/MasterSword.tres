@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Sword" format=3 uid="uid://bw2a5illkocya"]
+
+[ext_resource type="Script" uid="uid://bll4h77mlrw3s" path="res://Scripts/Resources/Knight/Equipment/Swords/Sword.gd" id="1_hrm0a"]
+[ext_resource type="Texture2D" uid="uid://bkq4pu6bxspi4" path="res://Sprites/Items/Sword_MasterSword.png" id="2_lwov1"]
+
+[resource]
+script = ExtResource("1_hrm0a")
+price = 900
+priceIsInDollars = true
+name = "Master sword"
+addedAttack = 95
+moneyMultiplier = 6.0
+visual = ExtResource("2_lwov1")
+metadata/_custom_type_script = "uid://bll4h77mlrw3s"

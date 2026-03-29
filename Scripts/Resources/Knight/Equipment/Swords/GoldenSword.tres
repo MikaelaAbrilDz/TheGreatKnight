@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Sword" format=3 uid="uid://dkyyj8tfex2jk"]
+
+[ext_resource type="Script" uid="uid://bll4h77mlrw3s" path="res://Scripts/Resources/Knight/Equipment/Swords/Sword.gd" id="1_63gvy"]
+[ext_resource type="Texture2D" uid="uid://b5bwvnhlqkw11" path="res://Sprites/Items/Sword_GoldenSword.png" id="2_4s5ow"]
+
+[resource]
+script = ExtResource("1_63gvy")
+price = 200
+priceIsInDollars = true
+name = "Golden sword"
+addedAttack = 30
+moneyMultiplier = 5.0
+visual = ExtResource("2_4s5ow")
+metadata/_custom_type_script = "uid://bll4h77mlrw3s"

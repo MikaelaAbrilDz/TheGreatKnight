@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Sword" format=3 uid="uid://db55q58ao3he7"]
+
+[ext_resource type="Script" uid="uid://bll4h77mlrw3s" path="res://Scripts/Resources/Knight/Equipment/Swords/Sword.gd" id="1_tj8f4"]
+[ext_resource type="Texture2D" uid="uid://djjg4qobw53dp" path="res://Sprites/Items/Sword_SharpSword.png" id="2_dg26o"]
+
+[resource]
+script = ExtResource("1_tj8f4")
+price = 100
+name = "Sharp sword"
+addedAttack = 2
+visual = ExtResource("2_dg26o")
+metadata/_custom_type_script = "uid://bll4h77mlrw3s"

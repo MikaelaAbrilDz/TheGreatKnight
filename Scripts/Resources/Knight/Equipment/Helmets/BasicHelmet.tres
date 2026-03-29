@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Helmet" format=3 uid="uid://yyd8yatxvfes"]
+
+[ext_resource type="Script" uid="uid://c4chsxuusg4ys" path="res://Scripts/Resources/Knight/Equipment/Helmets/Helmet.gd" id="1_hv7h8"]
+[ext_resource type="Texture2D" uid="uid://5yayfj1o5a3j" path="res://Sprites/Items/Helmet_BasicHelmet.png" id="2_ltcdd"]
+
+[resource]
+script = ExtResource("1_hv7h8")
+name = "Basic helmet"
+visual = ExtResource("2_ltcdd")
+metadata/_custom_type_script = "uid://c4chsxuusg4ys"

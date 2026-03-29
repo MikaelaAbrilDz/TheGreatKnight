@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Enemy" format=3 uid="uid://b4txlxoeh30e4"]
+
+[ext_resource type="Script" uid="uid://dd638hjl806t2" path="res://Scripts/Resources/Knight/Enemies/Enemy.gd" id="1_o4ldg"]
+
+[resource]
+script = ExtResource("1_o4ldg")
+name = "BEAST"
+life = 750
+damage = 35
+armor = 15
+speed = 4.75

@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Sword" format=3 uid="uid://djcltg5knrmkp"]
+
+[ext_resource type="Script" uid="uid://bll4h77mlrw3s" path="res://Scripts/Resources/Knight/Equipment/Swords/Sword.gd" id="1_oun3e"]
+[ext_resource type="Texture2D" uid="uid://bv48lp5dba7ea" path="res://Sprites/Items/Sword_GreatSword.png" id="2_iibe0"]
+
+[resource]
+script = ExtResource("1_oun3e")
+price = 350
+name = "Great sword"
+addedAttack = 7
+moneyMultiplier = 1.2
+visual = ExtResource("2_iibe0")
+metadata/_custom_type_script = "uid://bll4h77mlrw3s"

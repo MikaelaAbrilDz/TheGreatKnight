@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Shield" format=3 uid="uid://bwikho5qcnmkh"]
+
+[ext_resource type="Script" uid="uid://ckiaueptwpugt" path="res://Scripts/Resources/Knight/Equipment/Shields/Shield.gd" id="1_ngwe6"]
+[ext_resource type="Texture2D" uid="uid://cgtd7b1xbqf8r" path="res://Sprites/Items/Shield_SturdyShield.png" id="2_8v4sy"]
+
+[resource]
+script = ExtResource("1_ngwe6")
+price = 55
+name = "Sturdy shield"
+addedDefense = 1
+visual = ExtResource("2_8v4sy")
+metadata/_custom_type_script = "uid://ckiaueptwpugt"

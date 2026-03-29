@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Sword" format=3 uid="uid://blr5iwlaojhjk"]
+
+[ext_resource type="Script" uid="uid://bll4h77mlrw3s" path="res://Scripts/Resources/Knight/Equipment/Swords/Sword.gd" id="1_tjy4x"]
+[ext_resource type="Texture2D" uid="uid://bjfhe057yi517" path="res://Sprites/Items/Sword_MagicSword.png" id="2_87c6b"]
+
+[resource]
+script = ExtResource("1_tjy4x")
+price = 100
+priceIsInDollars = true
+name = "Magic sword"
+addedAttack = 25
+moneyMultiplier = 2.0
+visual = ExtResource("2_87c6b")
+metadata/_custom_type_script = "uid://bll4h77mlrw3s"

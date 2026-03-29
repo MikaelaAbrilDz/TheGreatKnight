@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Enemy" format=3 uid="uid://d0a3ha7tipq8q"]
+
+[ext_resource type="Script" uid="uid://dd638hjl806t2" path="res://Scripts/Resources/Knight/Enemies/Enemy.gd" id="1_5kcac"]
+
+[resource]
+script = ExtResource("1_5kcac")
+name = "GOBLIN"
+life = 200
+damage = 15
+speed = 4.25

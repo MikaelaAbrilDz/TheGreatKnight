@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Helmet" format=3 uid="uid://ot7luxcvkvbu"]
+
+[ext_resource type="Script" uid="uid://c4chsxuusg4ys" path="res://Scripts/Resources/Knight/Equipment/Helmets/Helmet.gd" id="1_t0qdf"]
+[ext_resource type="Texture2D" uid="uid://badxa5ktw2luw" path="res://Sprites/Items/Helmet_GoldHelmet.png" id="2_6uyyj"]
+
+[resource]
+script = ExtResource("1_t0qdf")
+price = 700
+name = "Gold helmet"
+addedDefense = 7
+addedCharisma = 10
+visual = ExtResource("2_6uyyj")
+metadata/_custom_type_script = "uid://c4chsxuusg4ys"

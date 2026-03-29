@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Sword" format=3 uid="uid://c7fah7loxas8u"]
+
+[ext_resource type="Script" uid="uid://bll4h77mlrw3s" path="res://Scripts/Resources/Knight/Equipment/Swords/Sword.gd" id="1_e8prp"]
+[ext_resource type="Texture2D" uid="uid://cu01pb5o1mu8n" path="res://Sprites/Items/Sword_EndSword.png" id="2_jqvii"]
+
+[resource]
+script = ExtResource("1_e8prp")
+price = 700
+priceIsInDollars = true
+name = "End sword"
+addedAttack = 85
+moneyMultiplier = 6.0
+visual = ExtResource("2_jqvii")
+metadata/_custom_type_script = "uid://bll4h77mlrw3s"

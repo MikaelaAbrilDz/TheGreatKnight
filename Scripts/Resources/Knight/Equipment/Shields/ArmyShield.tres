@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Shield" format=3 uid="uid://cf7hgdvlstqqn"]
+
+[ext_resource type="Script" uid="uid://ckiaueptwpugt" path="res://Scripts/Resources/Knight/Equipment/Shields/Shield.gd" id="1_a5oo7"]
+[ext_resource type="Texture2D" uid="uid://bhpegg3epeyri" path="res://Sprites/Items/Shield_ArmyShield.png" id="2_5bm3e"]
+
+[resource]
+script = ExtResource("1_a5oo7")
+price = 200
+name = "Army shield"
+addedDefense = 2
+addedHealing = 1
+visual = ExtResource("2_5bm3e")
+metadata/_custom_type_script = "uid://ckiaueptwpugt"

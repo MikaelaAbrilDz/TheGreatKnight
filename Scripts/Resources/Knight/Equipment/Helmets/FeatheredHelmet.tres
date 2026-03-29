@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Helmet" format=3 uid="uid://8yuao7n6l6wq"]
+
+[ext_resource type="Script" uid="uid://c4chsxuusg4ys" path="res://Scripts/Resources/Knight/Equipment/Helmets/Helmet.gd" id="1_21xvf"]
+[ext_resource type="Texture2D" uid="uid://lpxgugsre6" path="res://Sprites/Items/Helmet_FeatheredHelmet.png" id="2_fh2f5"]
+
+[resource]
+script = ExtResource("1_21xvf")
+price = 50
+priceIsInDollars = true
+name = "Feathered helmet"
+addedDefense = 12
+addedCharisma = 11
+visual = ExtResource("2_fh2f5")
+metadata/_custom_type_script = "uid://c4chsxuusg4ys"

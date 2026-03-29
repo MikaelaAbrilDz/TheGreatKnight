@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Shield" format=3 uid="uid://cap37d5hdps3i"]
+
+[ext_resource type="Script" uid="uid://ckiaueptwpugt" path="res://Scripts/Resources/Knight/Equipment/Shields/Shield.gd" id="1_gp1tj"]
+[ext_resource type="Texture2D" uid="uid://cj7b6pxl4spum" path="res://Sprites/Items/Shield_ElvenShield.png" id="2_s4tdj"]
+
+[resource]
+script = ExtResource("1_gp1tj")
+price = 250
+priceIsInDollars = true
+name = "Elven shield"
+addedDefense = 15
+addedHealing = 20
+visual = ExtResource("2_s4tdj")
+metadata/_custom_type_script = "uid://ckiaueptwpugt"

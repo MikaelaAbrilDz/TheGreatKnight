@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Enemy" format=3 uid="uid://w7dmo0eurwji"]
+
+[ext_resource type="Script" uid="uid://dd638hjl806t2" path="res://Scripts/Resources/Knight/Enemies/Enemy.gd" id="1_rcnh2"]
+
+[resource]
+script = ExtResource("1_rcnh2")
+name = "DRAGON"
+life = 1000
+damage = 50
+armor = 25
+speed = 4.0

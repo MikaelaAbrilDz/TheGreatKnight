@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Helmet" format=3 uid="uid://cl7eamydxkf5a"]
+
+[ext_resource type="Script" uid="uid://c4chsxuusg4ys" path="res://Scripts/Resources/Knight/Equipment/Helmets/Helmet.gd" id="1_ntqv1"]
+[ext_resource type="Texture2D" uid="uid://bowo1fpgskapc" path="res://Sprites/Items/Helmet_WizardProtectiveHat.png" id="2_oly6m"]
+
+[resource]
+script = ExtResource("1_ntqv1")
+price = 1000
+priceIsInDollars = true
+name = "Wizard protective hat"
+addedDefense = 45
+addedCharisma = 30
+visual = ExtResource("2_oly6m")
+metadata/_custom_type_script = "uid://c4chsxuusg4ys"

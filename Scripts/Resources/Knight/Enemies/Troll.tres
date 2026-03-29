@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Enemy" format=3 uid="uid://bmc0u7gbnfw2a"]
+
+[ext_resource type="Script" uid="uid://dd638hjl806t2" path="res://Scripts/Resources/Knight/Enemies/Enemy.gd" id="1_ku4je"]
+
+[resource]
+script = ExtResource("1_ku4je")
+name = "TR0LL"
+life = 300
+damage = 20
+armor = 3
+speed = 3.5

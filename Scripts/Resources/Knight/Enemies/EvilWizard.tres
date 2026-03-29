@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Enemy" format=3 uid="uid://4cl78iau7eax"]
+
+[ext_resource type="Script" uid="uid://dd638hjl806t2" path="res://Scripts/Resources/Knight/Enemies/Enemy.gd" id="1_uj8nr"]
+
+[resource]
+script = ExtResource("1_uj8nr")
+name = "EVIL WIZARD"
+life = 2500
+damage = 105
+armor = 15
+speed = 4.25

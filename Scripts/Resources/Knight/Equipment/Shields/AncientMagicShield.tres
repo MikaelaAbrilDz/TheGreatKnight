@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Shield" format=3 uid="uid://b8f107nb2glud"]
+
+[ext_resource type="Script" uid="uid://ckiaueptwpugt" path="res://Scripts/Resources/Knight/Equipment/Shields/Shield.gd" id="1_rnnsl"]
+[ext_resource type="Texture2D" uid="uid://c532jxvjgqqvr" path="res://Sprites/Items/Shield_AncientMagicShield.png" id="2_unvs4"]
+
+[resource]
+script = ExtResource("1_rnnsl")
+price = 1000
+priceIsInDollars = true
+name = "Ancient magic shield"
+addedDefense = 30
+addedHealing = 50
+visual = ExtResource("2_unvs4")
+metadata/_custom_type_script = "uid://ckiaueptwpugt"

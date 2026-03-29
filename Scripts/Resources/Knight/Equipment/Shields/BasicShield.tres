@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Shield" format=3 uid="uid://bduiluqxymcko"]
+
+[ext_resource type="Script" uid="uid://ckiaueptwpugt" path="res://Scripts/Resources/Knight/Equipment/Shields/Shield.gd" id="1_31mpp"]
+[ext_resource type="Texture2D" uid="uid://vwipuoegfy4b" path="res://Sprites/Items/Shield_BasicShield.png" id="2_r3wkl"]
+
+[resource]
+script = ExtResource("1_31mpp")
+name = "Basic shield"
+visual = ExtResource("2_r3wkl")
+metadata/_custom_type_script = "uid://ckiaueptwpugt"

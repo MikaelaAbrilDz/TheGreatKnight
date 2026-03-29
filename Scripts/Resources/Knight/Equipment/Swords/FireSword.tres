@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Sword" format=3 uid="uid://dkim1lharknfw"]
+
+[ext_resource type="Script" uid="uid://bll4h77mlrw3s" path="res://Scripts/Resources/Knight/Equipment/Swords/Sword.gd" id="1_sbxjx"]
+[ext_resource type="Texture2D" uid="uid://bbad0fvlk3u0x" path="res://Sprites/Items/Sword_FireSword.png" id="2_w7kwr"]
+
+[resource]
+script = ExtResource("1_sbxjx")
+price = 320
+priceIsInDollars = true
+name = "Fire sword"
+addedAttack = 65
+moneyMultiplier = 2.0
+visual = ExtResource("2_w7kwr")
+metadata/_custom_type_script = "uid://bll4h77mlrw3s"

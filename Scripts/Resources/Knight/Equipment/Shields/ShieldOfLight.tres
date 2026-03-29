@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Shield" format=3 uid="uid://dtas8vo1n36q"]
+
+[ext_resource type="Script" uid="uid://ckiaueptwpugt" path="res://Scripts/Resources/Knight/Equipment/Shields/Shield.gd" id="1_mgo3f"]
+[ext_resource type="Texture2D" uid="uid://y2bq8qi8628e" path="res://Sprites/Items/Shield_ShieldOfLight.png" id="2_i6wx4"]
+
+[resource]
+script = ExtResource("1_mgo3f")
+price = 850
+priceIsInDollars = true
+name = "Shield of light"
+addedDefense = 25
+addedHealing = 40
+visual = ExtResource("2_i6wx4")
+metadata/_custom_type_script = "uid://ckiaueptwpugt"

@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Shield" format=3 uid="uid://dgoptsfs2uiad"]
+
+[ext_resource type="Script" uid="uid://ckiaueptwpugt" path="res://Scripts/Resources/Knight/Equipment/Shields/Shield.gd" id="1_l0sky"]
+[ext_resource type="Texture2D" uid="uid://b4iifgdpq07pt" path="res://Sprites/Items/Shield_BigShield.png" id="2_nbgqi"]
+
+[resource]
+script = ExtResource("1_l0sky")
+price = 300
+name = "Big shield"
+addedDefense = 3
+addedHealing = 2
+visual = ExtResource("2_nbgqi")
+metadata/_custom_type_script = "uid://ckiaueptwpugt"

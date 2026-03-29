@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Sword" format=3 uid="uid://c4r5dfdjrqgy4"]
+
+[ext_resource type="Script" uid="uid://bll4h77mlrw3s" path="res://Scripts/Resources/Knight/Equipment/Swords/Sword.gd" id="1_xfs51"]
+[ext_resource type="Texture2D" uid="uid://dmr2jhu05ctvq" path="res://Sprites/Items/Sword_ElvenSword.png" id="2_fk5ly"]
+
+[resource]
+script = ExtResource("1_xfs51")
+price = 325
+priceIsInDollars = true
+name = "Elven sword"
+addedAttack = 60
+moneyMultiplier = 6.5
+visual = ExtResource("2_fk5ly")
+metadata/_custom_type_script = "uid://bll4h77mlrw3s"

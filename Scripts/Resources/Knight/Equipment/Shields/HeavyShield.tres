@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Shield" format=3 uid="uid://dkjb4g0wfjoep"]
+
+[ext_resource type="Script" uid="uid://ckiaueptwpugt" path="res://Scripts/Resources/Knight/Equipment/Shields/Shield.gd" id="1_fpdwc"]
+[ext_resource type="Texture2D" uid="uid://csjn8xmjoqdc2" path="res://Sprites/Items/Shield_HeavyShield.png" id="2_3b2rh"]
+
+[resource]
+script = ExtResource("1_fpdwc")
+price = 900
+name = "Heavy shield"
+addedDefense = 5
+addedHealing = 5
+visual = ExtResource("2_3b2rh")
+metadata/_custom_type_script = "uid://ckiaueptwpugt"

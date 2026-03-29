@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Shield" format=3 uid="uid://n0h488ketv7a"]
+
+[ext_resource type="Script" uid="uid://ckiaueptwpugt" path="res://Scripts/Resources/Knight/Equipment/Shields/Shield.gd" id="1_cut5s"]
+[ext_resource type="Texture2D" uid="uid://cvjyyye3uuiyg" path="res://Sprites/Items/Shield_ElderTowerShield.png" id="2_vb3yc"]
+
+[resource]
+script = ExtResource("1_cut5s")
+price = 500
+priceIsInDollars = true
+name = "Elder tower shield"
+addedDefense = 20
+addedHealing = 5
+visual = ExtResource("2_vb3yc")
+metadata/_custom_type_script = "uid://ckiaueptwpugt"

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Sword" format=3 uid="uid://h0oi60xsimyi"]
+
+[ext_resource type="Script" uid="uid://bll4h77mlrw3s" path="res://Scripts/Resources/Knight/Equipment/Swords/Sword.gd" id="1_7po5t"]
+[ext_resource type="Texture2D" uid="uid://dg3kfss2jxuo2" path="res://Sprites/Items/Sword_ThunderSword.png" id="2_irera"]
+
+[resource]
+script = ExtResource("1_7po5t")
+price = 115
+priceIsInDollars = true
+name = "Thunder sword"
+addedAttack = 30
+moneyMultiplier = 0.8
+visual = ExtResource("2_irera")
+metadata/_custom_type_script = "uid://bll4h77mlrw3s"

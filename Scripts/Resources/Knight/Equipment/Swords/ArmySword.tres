@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Sword" format=3 uid="uid://b80lev5umm4ny"]
+
+[ext_resource type="Script" uid="uid://bll4h77mlrw3s" path="res://Scripts/Resources/Knight/Equipment/Swords/Sword.gd" id="1_40kv5"]
+[ext_resource type="Texture2D" uid="uid://b0lm5py0ipaus" path="res://Sprites/Items/Sword_ArmySword.png" id="2_d6gvq"]
+
+[resource]
+script = ExtResource("1_40kv5")
+price = 220
+name = "Army sword"
+addedAttack = 4
+moneyMultiplier = 1.2
+visual = ExtResource("2_d6gvq")
+metadata/_custom_type_script = "uid://bll4h77mlrw3s"

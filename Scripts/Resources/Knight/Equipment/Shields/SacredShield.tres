@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Shield" format=3 uid="uid://br64rcknf81lq"]
+
+[ext_resource type="Script" uid="uid://ckiaueptwpugt" path="res://Scripts/Resources/Knight/Equipment/Shields/Shield.gd" id="1_evghs"]
+[ext_resource type="Texture2D" uid="uid://c3p0d8tpfqkhk" path="res://Sprites/Items/Shield_SacredShield.png" id="2_8vwjg"]
+
+[resource]
+script = ExtResource("1_evghs")
+price = 100
+priceIsInDollars = true
+name = "Sacred shield"
+addedDefense = 10
+addedHealing = 10
+visual = ExtResource("2_8vwjg")
+metadata/_custom_type_script = "uid://ckiaueptwpugt"

@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Sword" format=3 uid="uid://cs025b21r420b"]
+
+[ext_resource type="Script" uid="uid://bll4h77mlrw3s" path="res://Scripts/Resources/Knight/Equipment/Swords/Sword.gd" id="1_8kivm"]
+[ext_resource type="Texture2D" uid="uid://dkniqx2ec7tlp" path="res://Sprites/Items/Sword_TreasureSword.png" id="2_lowfy"]
+
+[resource]
+script = ExtResource("1_8kivm")
+price = 500
+name = "Treasure sword"
+addedAttack = 1
+moneyMultiplier = 5.0
+visual = ExtResource("2_lowfy")
+metadata/_custom_type_script = "uid://bll4h77mlrw3s"
