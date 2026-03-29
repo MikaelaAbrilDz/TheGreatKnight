@@ -71,6 +71,7 @@ var counterForSocial : float
 var counterForEnemyAttack : float
 
 var isFinalBoss : bool = false
+var won : bool = false
 
 func _ready() -> void:
 	UpdateStatsNumbers()
@@ -88,7 +89,7 @@ func _process(delta: float) -> void:
 			counterForSocial = 0
 			ChangeKnightSocial(min(max(knightLevel / 4, 1), 20) * -1)
 	
-	if knightCurrentStatus == KnightStatus.fighting:
+	if knightCurrentStatus == KnightStatus.fighting and not won:
 		counterForEnemyAttack += delta
 		if counterForEnemyAttack > 5 - currentEnemy.speed:
 			counterForEnemyAttack = 0
@@ -363,6 +364,7 @@ func DeclineDeal() -> void:
 	dealUI.Move(Vector2(-803.0, 572))
 
 func WinGame():
+	won = true
 	for i in len(enemiesAnim):
 		if currentEnemy == enemies[i]:
 			enemiesAnim[i].play("Die")
