@@ -193,7 +193,7 @@ func ChangeEnemyLife(lifeChange : int):
 	if currentEnemyLife == 0 :
 		ChangeGold((currentEnemy.life + ((currentEnemy.damage * 15 / (6 - currentEnemy.speed))) / 2) * currentSword.moneyMultiplier)
 		ChangeExperience(currentEnemy.life + (currentEnemy.damage * 10))
-		if isFinalBoss:
+		if isFinalBoss and not won:
 			WinGame()
 		else:
 			SetNewEnemy()

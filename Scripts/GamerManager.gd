@@ -1,7 +1,7 @@
 extends Control
 class_name GamerManager
 
-
+@onready var gamerAnim = $Anim/Gamer/AnimationPlayer
 @onready var healthStat = $Stats/Health
 @onready var intelligenceStat = $Stats/Intelligence
 @onready var charismaStat = $Stats/Charisma
@@ -67,29 +67,34 @@ func _process(delta: float) -> void:
 		else: $GridContainer/GoOut.disabled = false
 
 func _on_go_work_pressed() -> void:
+	gamerAnim.play("Work")
 	gamerCurrentStatus = GamerStatus.working
 	ChangeDollars(5 + intelligence)
 
 
 func _on_study_pressed() -> void:
 		if dollars >= 50 * max(float(intelligence/2),1,1):
+			gamerAnim.play("Study")
 			ChangeDollars(-(50 * max(float(intelligence/2),1)))
 			gamerCurrentStatus = GamerStatus.studying
 			ChangeIntelligence(5)
 
 
 func _on_rest_pressed() -> void:
+	gamerAnim.play("Rest")
 	gamerCurrentStatus = GamerStatus.resting
 	ChangeLife(1 + health / 10)
 
 
 func _on_game_pressed() -> void:
+	gamerAnim.play("PlayVideogames")
 	gamerCurrentStatus = GamerStatus.gaming
 	ChangeHappiness(5)
 
 
 func _on_work_out_pressed() -> void:
 	if dollars >= 25:
+		gamerAnim.play("WorkOut")
 		ChangeDollars(-25)
 		gamerCurrentStatus = GamerStatus.workingOut
 		ChangeHealth(5)
@@ -97,6 +102,7 @@ func _on_work_out_pressed() -> void:
 
 func _on_go_out_pressed() -> void:
 	if dollars >= 35:
+		gamerAnim.play("GoOut")
 		ChangeDollars(-35)
 		gamerCurrentStatus = GamerStatus.goingOut
 		ChangeSocial(5 + charisma / 10)
