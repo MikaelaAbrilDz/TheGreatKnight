@@ -61,7 +61,7 @@ var experience : int = 0
 var knightHeal : int = 5
 var knightCharisma : int = 5
 var knightAttack : int = 5
-var knightLevel : int = 5
+var knightLevel : int = 1
 var enemyLevel : int = 1
 @onready var knightCurrentStatus : KnightStatus
 
@@ -160,16 +160,30 @@ func ChangeKnightLife(lifeChange : int):
 			$BG/KnightHealing.ResetStuff()
 	knightCurrentLife += lifeChange
 	if knightCurrentLife > knightMaxLife : knightCurrentLife = knightMaxLife
-	elif knightCurrentLife < 0 : knightCurrentLife = 0
+	elif knightCurrentLife <= 0 :
+		knightCurrentLife = 0
+		GameManager.howDidLose = GameManager.losingMode.knightLife
+		LoseGame()
 	UpdateKnightLifeBar()
 
 func ChangeKnightSocial(socialChange : int):
 	knightCurrentSocial += socialChange
 	if knightCurrentSocial > knightMaxSocial : knightCurrentSocial = knightMaxSocial
-	elif knightCurrentSocial < 0 : knightCurrentSocial = 0
+	elif knightCurrentSocial <= 0 :
+		knightCurrentSocial = 0
+		GameManager.howDidLose = GameManager.losingMode.knightSocial
+		LoseGame()
 	UpdateKnightSocialBar()
 
 func ChangeGold(goldChange : int):
+	if goldChange > 0:
+		$BG/GoldUp.text = "+ " + str(goldChange)
+		if not $BG/GoldUp.visible : $BG/GoldUp.visible = true
+		else: $BG/GoldUp.ResetStuff()
+	elif goldChange < 0:
+		$BG/GoldDown.text = str(goldChange)
+		if not $BG/GoldDown.visible : $BG/GoldDown.visible = true
+		else: $BG/GoldDown.ResetStuff()
 	gold += goldChange
 	if gold < 0 : gold = 0
 	UpdateGoldNumber()
@@ -226,6 +240,7 @@ func UpdateInventoryImages():
 func LevelUp():
 	knightLevel += 1
 	knightAttack += 1
+	$BG/KnightLevelUp.visible = true
 	UpdateStatsNumbers()
 	if knightLevel == 5:
 		enemyLevel = 2
@@ -255,6 +270,8 @@ func FirstTransition():
 		await get_tree().create_timer(5).timeout
 		knightCurrentStatus = KnightStatus.tavern
 		anim.play("Market")
+		for i in enemiesVisuals: i.visible = false
+		for i in enemiesAnim: i.speed_scale = 0
 		$"../Camera2D".Move(Vector2(2086, 0))
 		$"..".FirstTransition()
 
@@ -368,3 +385,10 @@ func WinGame():
 	for i in len(enemiesAnim):
 		if currentEnemy == enemies[i]:
 			enemiesAnim[i].play("Die")
+	await get_tree().create_timer(2).timeout
+	get_tree().change_scene_to_file("res://Scenes/Win.tscn")
+
+func LoseGame():
+	
+	await get_tree().create_timer(1).timeout
+	get_tree().change_scene_to_file("res://Scenes/Lose.tscn")

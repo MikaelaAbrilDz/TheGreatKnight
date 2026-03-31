@@ -42,6 +42,7 @@ func _process(delta: float) -> void:
 			ChangeIntelligence(-1)
 			ChangeHealth(-1)
 			ChangeHappiness(-1)
+			ChangeSocial(-2)
 			ChangeLife(-10/max(health / 10, 1))
 		elif gamerCurrentStatus == GamerStatus.studying:
 			ChangeHappiness(-1)
@@ -110,19 +111,28 @@ func _on_go_out_pressed() -> void:
 func ChangeLife(lifeChange : int):
 	currentLife += lifeChange
 	if currentLife > maxLife : currentLife = maxLife
-	elif currentLife < 0 : currentLife = 0
+	elif currentLife <= 0 :
+		currentLife = 0
+		GameManager.howDidLose = GameManager.losingMode.gamerEnergy
+		LoseGame()
 	UpdateLifeBar()
 
 func ChangeSocial(socialChange : int):
 	currentSocial += socialChange
 	if currentSocial > maxSocial : currentSocial = maxSocial
-	elif currentSocial < 0 : currentSocial = 0
+	elif currentSocial <= 0 :
+		currentSocial = 0
+		GameManager.howDidLose = GameManager.losingMode.gamerSocial
+		LoseGame()
 	UpdateSocialBar()
 
 func ChangeHappiness(happinessChange : int):
 	currentHappiness += happinessChange
 	if currentHappiness > maxHappiness : currentHappiness = maxHappiness
-	elif currentHappiness < 0 : currentLife = 0
+	elif currentHappiness <= 0 :
+		currentHappiness = 0
+		GameManager.howDidLose = GameManager.losingMode.gamerHappiness
+		LoseGame()
 	UpdateHappinessBar()
 
 func ChangeDollars(dollarChange : int):
@@ -158,3 +168,7 @@ func UpdateHappinessBar():
 
 func UpdateSocialBar():
 	socialBar.value = float(currentSocial) / float(maxSocial)
+
+func LoseGame():
+	await get_tree().create_timer(1).timeout
+	get_tree().change_scene_to_file("res://Scenes/Lose.tscn")
