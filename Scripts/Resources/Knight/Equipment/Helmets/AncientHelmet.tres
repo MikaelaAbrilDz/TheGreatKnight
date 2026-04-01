@@ -5,10 +5,10 @@
 
 [resource]
 script = ExtResource("1_1ll7j")
-price = 500
+price = 600
 priceIsInDollars = true
 name = "Ancient helmet"
-addedDefense = 35
+addedDefense = 40
 addedCharisma = 7
 visual = ExtResource("2_8y7yj")
 metadata/_custom_type_script = "uid://c4chsxuusg4ys"

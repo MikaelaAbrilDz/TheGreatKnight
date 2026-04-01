@@ -13,10 +13,12 @@
 [ext_resource type="Texture2D" uid="uid://bygetw6xnp74k" path="res://Sprites/UI/ButtonPink_Normal.png" id="4_vy5pj"]
 [ext_resource type="Texture2D" uid="uid://xgpgam7o7amn" path="res://Sprites/UI/ButtonPink_Pressed.png" id="5_bmxlf"]
 [ext_resource type="Texture2D" uid="uid://bo67lkct6jcal" path="res://Sprites/UI/Social Under.png" id="5_frkhe"]
+[ext_resource type="Texture2D" uid="uid://c1or0yt4u3ap3" path="res://Sprites/BGs/BG_Market.png" id="5_hvi37"]
 [ext_resource type="Resource" uid="uid://cbnxpaswsw4cv" path="res://Scripts/Resources/Knight/Enemies/Skeleton.tres" id="5_hwpts"]
 [ext_resource type="Texture2D" uid="uid://ci8h5216782vp" path="res://Sprites/UI/Social_Over.png" id="6_1p5hy"]
 [ext_resource type="Texture2D" uid="uid://c3ujp6cqnohq2" path="res://Sprites/UI/ButtonPink_Hover.png" id="6_4kpch"]
 [ext_resource type="Resource" uid="uid://b4txlxoeh30e4" path="res://Scripts/Resources/Knight/Enemies/Beast.tres" id="6_7sj7i"]
+[ext_resource type="Texture2D" uid="uid://cnginba8hdwbr" path="res://Sprites/BGs/BG_Tavern.png" id="6_ppxtm"]
 [ext_resource type="Script" uid="uid://c4chsxuusg4ys" path="res://Scripts/Resources/Knight/Equipment/Helmets/Helmet.gd" id="6_xvtyr"]
 [ext_resource type="Texture2D" uid="uid://bydaocryq20gb" path="res://Sprites/UI/Social_Progress.png" id="7_h1m7h"]
 [ext_resource type="Script" uid="uid://bgdeaj2y31blw" path="res://Scripts/FightButton.gd" id="7_jw32o"]
@@ -118,6 +120,7 @@
 [ext_resource type="Texture2D" uid="uid://ckxft002gx6ly" path="res://Sprites/UI/ButtonWideYellow_Pressed.png" id="88_tjlwc"]
 [ext_resource type="Texture2D" uid="uid://b07teeslculjt" path="res://Sprites/UI/ButtonWideYellow_Hover.png" id="89_5ltlj"]
 [ext_resource type="Texture2D" uid="uid://cp0a3ir8ce0k7" path="res://Sprites/Chars/Knight/KNIGHT_Head.png" id="89_ljb7l"]
+[ext_resource type="Texture2D" uid="uid://c02ekfpp0e7rm" path="res://Sprites/BGs/BG_Dungeon.png" id="90_0i48d"]
 [ext_resource type="Texture2D" uid="uid://b8w6usmaqd2mq" path="res://Sprites/UI/ButtonWideBlueish_Normal.png" id="90_om687"]
 [ext_resource type="Texture2D" uid="uid://bsrirplggcpfj" path="res://Sprites/Chars/Knight/KNIGHT_Foot.png" id="90_pqonn"]
 [ext_resource type="Texture2D" uid="uid://diah1wjxix1ax" path="res://Sprites/UI/ButtonWideBlueish_Pressed.png" id="91_a5sy2"]
@@ -133,23 +136,31 @@
 [ext_resource type="Texture2D" uid="uid://boynb88e4baj4" path="res://Sprites/Chars/Enemies/Troll/Troll_Head.png" id="99_48o01"]
 [ext_resource type="Texture2D" uid="uid://ckgbxs47wcyfa" path="res://Sprites/Chars/Enemies/Troll/Troll_Hand.png" id="100_48o01"]
 [ext_resource type="Texture2D" uid="uid://c81d2amhbkmr6" path="res://Sprites/Chars/Enemies/Troll/Troll_Foot.png" id="100_tnt7p"]
+[ext_resource type="AudioStream" uid="uid://cotk46sigbogc" path="res://Audio/Sfx/GoblinAttack.wav" id="101_wlsl0"]
+[ext_resource type="AudioStream" uid="uid://dh86dm122ugu5" path="res://Audio/Sfx/GoblinDefeat.wav" id="102_4trvs"]
 [ext_resource type="Texture2D" uid="uid://b5otpvv2vdsi8" path="res://Sprites/Chars/Enemies/Skeleton/Skeleton_Body.png" id="102_bposm"]
 [ext_resource type="Texture2D" uid="uid://b6dou2st2p80e" path="res://Sprites/Chars/Enemies/Skeleton/Skeleton_Head.png" id="103_0j4c6"]
 [ext_resource type="Texture2D" uid="uid://bpghbmlh07ofl" path="res://Sprites/Chars/Enemies/Skeleton/Skull_Hand.png" id="104_qmo2n"]
 [ext_resource type="Texture2D" uid="uid://d21knsesxgr5v" path="res://Sprites/Chars/Enemies/Beast/Beast_Arm.png" id="105_fend5"]
 [ext_resource type="Texture2D" uid="uid://6fo8g7ymud24" path="res://Sprites/Chars/Enemies/Beast/Beast_Hand.png" id="106_qxwff"]
 [ext_resource type="Texture2D" uid="uid://ci8hwh4x18ovi" path="res://Sprites/Chars/Enemies/Beast/Beast_Thumb.png" id="107_dwns0"]
+[ext_resource type="AudioStream" uid="uid://s4jn1xf2uign" path="res://Audio/Sfx/TrollAttack.wav" id="107_r3hun"]
 [ext_resource type="Texture2D" uid="uid://bfeh7y8rcqxg5" path="res://Sprites/Chars/Enemies/Beast/Beast_OtherFingers.png" id="108_ghvh6"]
+[ext_resource type="AudioStream" uid="uid://bbtpmb8c4aojs" path="res://Audio/Sfx/TrollDefeat.wav" id="108_v7kft"]
 [ext_resource type="Texture2D" uid="uid://dojjsqk3o7wje" path="res://Sprites/Chars/Enemies/Dragon/Dragon_Head.png" id="109_ghvh6"]
 [ext_resource type="Texture2D" uid="uid://7n02a4rg23r3" path="res://Sprites/Chars/Enemies/Dragon/Dragon_Jaw.png" id="110_ogxyq"]
 [ext_resource type="Texture2D" uid="uid://ba7q3qkt818bc" path="res://Sprites/Chars/Enemies/Dragon/Dragon_Tongue.png" id="111_g6gwx"]
 [ext_resource type="Texture2D" uid="uid://duygbueu63fwv" path="res://Sprites/Chars/Enemies/Necromancer/Necromancer_NecroTorso.png" id="112_ipxax"]
+[ext_resource type="AudioStream" uid="uid://m45ux046hkb" path="res://Audio/Sfx/SkeletonAttack.wav" id="112_qfdr7"]
+[ext_resource type="AudioStream" uid="uid://ldg43qg288kt" path="res://Audio/Sfx/SkeletonDefeat.wav" id="113_4yt88"]
 [ext_resource type="Texture2D" uid="uid://fxbehji4bmat" path="res://Sprites/Chars/Enemies/Necromancer/Necromancer_NecroHead.png" id="113_ymfm7"]
 [ext_resource type="Texture2D" uid="uid://bom5o5ija4ml5" path="res://Sprites/Chars/Enemies/Necromancer/Necromancer_NecroHand.png" id="114_hnm10"]
 [ext_resource type="Texture2D" uid="uid://cvc7bj0dhgwy8" path="res://Sprites/Chars/Enemies/Necromancer/Necromancer_BigBody.png" id="115_k5mmj"]
 [ext_resource type="Texture2D" uid="uid://ud5rubl66b6b" path="res://Sprites/Chars/Enemies/Necromancer/Necromancer_BodyPart.png" id="116_bgexd"]
 [ext_resource type="Texture2D" uid="uid://c0qh7y73juqcw" path="res://Sprites/Chars/Enemies/Necromancer/Necromancer_Arm.png" id="117_ywalu"]
+[ext_resource type="AudioStream" uid="uid://ctd1kls2x61bs" path="res://Audio/Sfx/BeastAttack.wav" id="118_hq5wt"]
 [ext_resource type="Texture2D" uid="uid://bujbqrw5jdv2w" path="res://Sprites/Chars/Enemies/Necromancer/Necromancer_Arm2.png" id="118_lx5tc"]
+[ext_resource type="AudioStream" uid="uid://do48onkmp7uqj" path="res://Audio/Sfx/BeastDefeat.wav" id="119_0i48d"]
 [ext_resource type="Texture2D" uid="uid://ds2ttreexdfay" path="res://Sprites/Chars/Enemies/Necromancer/Necromancer_Head.png" id="119_i1hh6"]
 [ext_resource type="Texture2D" uid="uid://xvj0lxk2fsoj" path="res://Sprites/Chars/Enemies/Necromancer/Necromancer_Foot.png" id="120_epesh"]
 [ext_resource type="Texture2D" uid="uid://tma7ak1qjn17" path="res://Sprites/Chars/Enemies/EvilWizard/EvilWizard_Body.png" id="121_lx5tc"]
@@ -158,6 +169,8 @@
 [ext_resource type="Texture2D" uid="uid://ida55soiwo01" path="res://Sprites/Chars/Enemies/EvilWizard/EvilWizardDragonHead.png" id="124_10juh"]
 [ext_resource type="Texture2D" uid="uid://d2ny2blwbov0x" path="res://Sprites/Chars/Enemies/EvilWizard/EvilWizard_DragonJaw.png" id="125_m2ygb"]
 [ext_resource type="Texture2D" uid="uid://6v7s5buaglap" path="res://Sprites/Chars/Enemies/EvilWizard/EvilWizard_DragonTongue.png" id="126_ckwfn"]
+[ext_resource type="AudioStream" uid="uid://qanetjr1p8gg" path="res://Audio/Sfx/DragonAttack.wav" id="126_o3mur"]
+[ext_resource type="AudioStream" uid="uid://b6p3d4jardhpj" path="res://Audio/Sfx/DragonDefeat.wav" id="126_uyxdb"]
 [ext_resource type="Texture2D" uid="uid://b1r38ocecai53" path="res://Sprites/Chars/Enemies/FallenGod/FallenGod_Body.png" id="127_8nd6u"]
 [ext_resource type="Texture2D" uid="uid://0d484qcvk0w0" path="res://Sprites/Chars/Enemies/FallenGod/FallenGod_SwordHole.png" id="128_1tb4x"]
 [ext_resource type="Texture2D" uid="uid://dj5202cfcqb26" path="res://Sprites/Chars/Enemies/FallenGod/FallenGod_Head_0.png" id="129_7j6ax"]
@@ -169,10 +182,22 @@
 [ext_resource type="Texture2D" uid="uid://m24ug4yhdqye" path="res://Sprites/Chars/Enemies/FallenGod/FallenGod_Head_1.png" id="134_l4xhm"]
 [ext_resource type="Texture2D" uid="uid://dkdc3cu8i1l2f" path="res://Sprites/Chars/Enemies/FallenGod/FallenGod_Head_2.png" id="135_bv7qx"]
 [ext_resource type="Texture2D" uid="uid://cbew511gxrwiv" path="res://Sprites/Chars/Enemies/FallenGod/FallenGod_Head_3.png" id="136_5g1k7"]
+[ext_resource type="AudioStream" uid="uid://dkm3a2oujr2r8" path="res://Audio/Sfx/NecromancerAttack.wav" id="137_0o3eo"]
+[ext_resource type="AudioStream" uid="uid://b606p6ud845mx" path="res://Audio/Sfx/NecromancerDefeat.wav" id="137_2ocok"]
 [ext_resource type="Texture2D" uid="uid://bojcb83fuhstr" path="res://Sprites/UI/ButtonMoverYellow_Normal.png" id="142_dlu6c"]
 [ext_resource type="Texture2D" uid="uid://dineyukdr6dy1" path="res://Sprites/UI/ButtonMoverYellow_Pressed.png" id="143_cf1h0"]
 [ext_resource type="Texture2D" uid="uid://bmcru42cqd4vt" path="res://Sprites/UI/ButtonMoverYellow_Hover.png" id="144_22l73"]
+[ext_resource type="AudioStream" uid="uid://r0nth586qt5r" path="res://Audio/Sfx/EvilWizardDefeat.wav" id="145_5ldpu"]
+[ext_resource type="AudioStream" uid="uid://5c7hk25r5074" path="res://Audio/Sfx/EvilWizardAttack.wav" id="145_wys7x"]
+[ext_resource type="Texture2D" uid="uid://coprd33a37n0q" path="res://Sprites/BGs/BG_Bedroom.png" id="154_4qiut"]
 [ext_resource type="Texture2D" uid="uid://bynnjv40t85dv" path="res://Sprites/UI/ButtonWideGreen2_Disabled.png" id="154_5g1k7"]
+[ext_resource type="Texture2D" uid="uid://d201ijj67g7am" path="res://Sprites/BGs/BG_StudyRoom.png" id="155_uyxdb"]
+[ext_resource type="Texture2D" uid="uid://lsokuvep54pt" path="res://Sprites/BGs/BG_GameRoom.png" id="156_o3mur"]
+[ext_resource type="Texture2D" uid="uid://ctuvagplyiml2" path="res://Sprites/BGs/BG_Disco.png" id="157_2ocok"]
+[ext_resource type="Script" uid="uid://jvju284d4ue8" path="res://Scripts/GamerButton.gd" id="157_22l73"]
+[ext_resource type="Texture2D" uid="uid://cgaw1bvgb6bp3" path="res://Sprites/BGs/BG_Kitchen.png" id="158_0o3eo"]
+[ext_resource type="AudioStream" uid="uid://dt0hutb5t5x76" path="res://Audio/Sfx/FallenGodAttack.wav" id="158_kum2i"]
+[ext_resource type="AudioStream" uid="uid://xlmq8snyigiw" path="res://Audio/Sfx/FallenGodDefeat.wav" id="159_74tli"]
 [ext_resource type="Texture2D" uid="uid://dgy3qrhptp5a4" path="res://Sprites/UI/ButtonWideRed2_Disabled.png" id="164_o737a"]
 [ext_resource type="Texture2D" uid="uid://dojn2q2a81fwi" path="res://Sprites/Chars/Gamer/Gamer_Torso.png" id="167_5wvm2"]
 [ext_resource type="Texture2D" uid="uid://6knm7i0otm1a" path="res://Sprites/UI/ButtonWideBlueish_Disabled.png" id="168_8g4l6"]
@@ -181,6 +206,15 @@
 [ext_resource type="Texture2D" uid="uid://codbuvg827yah" path="res://Sprites/Chars/Gamer/Gamer_Head.png" id="170_5g1k7"]
 [ext_resource type="Texture2D" uid="uid://cu5bf3obdpe3w" path="res://Sprites/Chars/Gamer/Gamer_Foot.png" id="171_o737a"]
 [ext_resource type="Texture2D" uid="uid://cwjcjx0c3vm2v" path="res://Sprites/Chars/Gamer/Gamer_Spatula.png" id="178_8ir7a"]
+[ext_resource type="Script" uid="uid://oomtnwv5t22e" path="res://Scenes/SfxManager.gd" id="182_xxmk3"]
+[ext_resource type="AudioStream" uid="uid://82ghh0ntfnuo" path="res://Audio/Sfx/DigitalClick.wav" id="183_cf1h0"]
+[ext_resource type="AudioStream" uid="uid://c0mohdj1a3qgr" path="res://Audio/Sfx/MechanicalClick.wav" id="183_dlu6c"]
+[ext_resource type="AudioStream" uid="uid://b6cl0r3yerw5a" path="res://Audio/Sfx/DigitalHover.wav" id="184_yhm6q"]
+[ext_resource type="Texture2D" uid="uid://cy6mlb4tjduon" path="res://Sprites/BGs/BG_Gym.png" id="188_ppxtm"]
+[ext_resource type="AudioStream" uid="uid://bfjqialsy6xnl" path="res://Audio/Sfx/LevelUp.wav" id="192_4yt88"]
+[ext_resource type="AudioStream" uid="uid://cxsugfdjngpfd" path="res://Audio/FrostedFrenzy_Fesliyan_Loop.wav" id="194_33aut"]
+[ext_resource type="Script" uid="uid://45a5ouiewxoo" path="res://Scenes/MusicManager.gd" id="194_qseld"]
+[ext_resource type="AudioStream" uid="uid://c2wrgg8etyglb" path="res://Audio/SnapAlong_Fesliyan_Loop.wav" id="195_w3oh2"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cchgx"]
 bg_color = Color(0, 0.5176471, 0.5568628, 1)
@@ -963,6 +997,25 @@ tracks/4/keys = {
 "update": 0,
 "values": [-0.5834204, -0.2513274122871831, -0.7836528341454536]
 }
+tracks/5/type = "audio"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("../../../../SfxManager/KnightEnemyAttack")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"clips": [{
+"end_offset": 42.267002,
+"start_offset": 0.0,
+"stream": ExtResource("101_wlsl0")
+}, {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("101_wlsl0")
+}],
+"times": PackedFloat32Array(-5.007529, 0.2)
+}
+tracks/5/use_blend = true
 
 [sub_resource type="Animation" id="Animation_y7h6l"]
 resource_name = "Die"
@@ -1027,6 +1080,29 @@ tracks/4/keys = {
 "update": 0,
 "values": [-0.5834204, -0.05061454830783516, -0.7819075048934598, -0.7819075048934598]
 }
+tracks/5/type = "audio"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("../../../../SfxManager/KnightEnemyDefeat")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"clips": [{
+"end_offset": 46.614674,
+"start_offset": 0.0,
+"stream": ExtResource("101_wlsl0")
+}, {
+"end_offset": 1.0578086,
+"start_offset": 0.0,
+"stream": ExtResource("102_4trvs")
+}, {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("102_4trvs")
+}],
+"times": PackedFloat32Array(-0.82190025, -0.82162964, 0.099999994)
+}
+tracks/5/use_blend = true
 
 [sub_resource type="Animation" id="Animation_hwg2s"]
 resource_name = "Enter"
@@ -1156,12 +1232,77 @@ tracks/4/keys = {
 "values": [-0.5834204]
 }
 
+[sub_resource type="Animation" id="Animation_4qiut"]
+resource_name = "Start"
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("bone_Torso:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(148.345, -15.95)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("bone_Torso:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-0.5986479334340552]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("bone_Torso/bone_Hand:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-105.285, -50.115)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("bone_Torso/bone_Hand:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.11344640137963144]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("bone_Torso/bone_Head:rotation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-0.7819075048934598]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_hwg2s"]
 _data = {
 &"Attack": SubResource("Animation_48o01"),
 &"Die": SubResource("Animation_y7h6l"),
 &"Enter": SubResource("Animation_hwg2s"),
-&"RESET": SubResource("Animation_tnt7p")
+&"RESET": SubResource("Animation_tnt7p"),
+&"Start": SubResource("Animation_4qiut")
 }
 
 [sub_resource type="Animation" id="Animation_bposm"]
@@ -1253,9 +1394,25 @@ tracks/6/keys = {
 "update": 0,
 "values": [0.0, 0.0296705972839034, 0.0]
 }
+tracks/7/type = "audio"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("../../../../SfxManager/KnightEnemyAttack")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("107_r3hun")
+}],
+"times": PackedFloat32Array(0.1)
+}
+tracks/7/use_blend = true
 
 [sub_resource type="Animation" id="Animation_mjyee"]
 resource_name = "Die"
+length = 1.4
 step = 0.05
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -1341,6 +1498,21 @@ tracks/6/keys = {
 "update": 0,
 "values": [0.0, 0.09773843811168284, 2.5342180738957665, 1.851794336365984]
 }
+tracks/7/type = "audio"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("../../../../SfxManager/KnightEnemyDefeat")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("108_v7kft")
+}],
+"times": PackedFloat32Array(0.05)
+}
+tracks/7/use_blend = true
 
 [sub_resource type="Animation" id="Animation_qmo2n"]
 resource_name = "Enter"
@@ -1518,12 +1690,101 @@ tracks/6/keys = {
 "values": [0.0]
 }
 
+[sub_resource type="Animation" id="Animation_uyxdb"]
+resource_name = "Start"
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("bone_Torso:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(32.515, -68.13)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("bone_Torso:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [1.4992378274631286]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("bone_Torso/bone_Head:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [1.5149457907310782]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("bone_Torso/bone_Hand:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(7.1405325, -132.81194)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("bone_Torso/bone_Hand:rotation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.8656833089891879]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("bone_Foot:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(8.35, -122.22)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("bone_Foot:rotation")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [1.851794336365984]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_qmo2n"]
 _data = {
 &"Attack": SubResource("Animation_bposm"),
 &"Die": SubResource("Animation_mjyee"),
 &"Enter": SubResource("Animation_qmo2n"),
-&"RESET": SubResource("Animation_0j4c6")
+&"RESET": SubResource("Animation_0j4c6"),
+&"Start": SubResource("Animation_uyxdb")
 }
 
 [sub_resource type="Animation" id="Animation_fend5"]
@@ -1603,6 +1864,21 @@ tracks/5/keys = {
 "update": 0,
 "values": [0.35912138, 1.2356931104119857, -0.6143558967020039]
 }
+tracks/6/type = "audio"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("../../../../SfxManager/KnightEnemyAttack")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("112_qfdr7")
+}],
+"times": PackedFloat32Array(0)
+}
+tracks/6/use_blend = true
 
 [sub_resource type="Animation" id="Animation_ghvh6"]
 resource_name = "Die"
@@ -1679,6 +1955,25 @@ tracks/5/keys = {
 "update": 0,
 "values": [0.35912138, -0.06283185307179626]
 }
+tracks/6/type = "audio"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("../../../../SfxManager/KnightEnemyDefeat")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("113_4yt88")
+}, {
+"end_offset": 0.022883127,
+"start_offset": 0.0,
+"stream": ExtResource("113_4yt88")
+}],
+"times": PackedFloat32Array(0.35, 0.65)
+}
+tracks/6/use_blend = true
 
 [sub_resource type="Animation" id="Animation_qxwff"]
 resource_name = "Enter"
@@ -1832,12 +2127,89 @@ tracks/5/keys = {
 "values": [Vector2(-56, -163)]
 }
 
+[sub_resource type="Animation" id="Animation_o3mur"]
+resource_name = "Start"
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("bone_Torso:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-28.253, -20.175)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("bone_Torso:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [1.569050997542902]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("bone_Torso/bone_Head:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-55.623, -80.337)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("bone_Torso/bone_Head:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-5.5710909723659]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("bone_Torso/bone_Hand:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-92.943, -44.955)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("bone_Torso/bone_Hand:rotation")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-0.06283185307179626]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_ghvh6"]
 _data = {
 &"Attack": SubResource("Animation_fend5"),
 &"Die": SubResource("Animation_ghvh6"),
 &"Enter": SubResource("Animation_qxwff"),
-&"RESET": SubResource("Animation_dwns0")
+&"RESET": SubResource("Animation_dwns0"),
+&"Start": SubResource("Animation_o3mur")
 }
 
 [sub_resource type="Animation" id="Animation_ogxyq"]
@@ -1905,6 +2277,21 @@ tracks/4/keys = {
 "update": 0,
 "values": [0.29146998508305283, 0.29146998508305283, -0.2076941809873248]
 }
+tracks/5/type = "audio"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("../../../../SfxManager/KnightEnemyAttack")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("118_hq5wt")
+}],
+"times": PackedFloat32Array(0)
+}
+tracks/5/use_blend = true
 
 [sub_resource type="Animation" id="Animation_g6gwx"]
 resource_name = "Die"
@@ -1969,6 +2356,21 @@ tracks/4/keys = {
 "update": 0,
 "values": [-0.2076941809873248, 0.1815142422074099, 0.1815142422074099, 0.1815142422074099]
 }
+tracks/5/type = "audio"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("../../../../SfxManager/KnightEnemyDefeat")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"clips": [{
+"end_offset": 0.2746406,
+"start_offset": 0.0,
+"stream": ExtResource("119_0i48d")
+}],
+"times": PackedFloat32Array(0)
+}
+tracks/5/use_blend = true
 
 [sub_resource type="Animation" id="Animation_ynyn3"]
 resource_name = "Enter"
@@ -2098,12 +2500,77 @@ tracks/4/keys = {
 "values": [0.0]
 }
 
+[sub_resource type="Animation" id="Animation_2ocok"]
+resource_name = "Start"
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("bone_Arm:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(72.545, -70.645)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("bone_Arm:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-0.27052603405912107]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("bone_Arm/bone_Hand:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.1954768762233647]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("bone_Arm/bone_Hand/bone_Thumb:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.5829399701661057]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("bone_Arm/bone_Hand/bone_Fingers:rotation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.1815142422074099]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_c3wx6"]
 _data = {
 &"Attack": SubResource("Animation_ogxyq"),
 &"Die": SubResource("Animation_g6gwx"),
 &"Enter": SubResource("Animation_ynyn3"),
-&"RESET": SubResource("Animation_26vri")
+&"RESET": SubResource("Animation_26vri"),
+&"Start": SubResource("Animation_2ocok")
 }
 
 [sub_resource type="Animation" id="Animation_c3wx6"]
@@ -2158,9 +2625,25 @@ tracks/3/keys = {
 "update": 0,
 "values": [-0.40840704496667274, -0.10297442586766505, -0.39793506945470736]
 }
+tracks/4/type = "audio"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("../../../../SfxManager/KnightEnemyAttack")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("126_o3mur")
+}],
+"times": PackedFloat32Array(0)
+}
+tracks/4/use_blend = true
 
 [sub_resource type="Animation" id="Animation_h4exs"]
 resource_name = "Die"
+length = 2.0
 step = 0.05
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -2210,6 +2693,21 @@ tracks/3/keys = {
 "update": 0,
 "values": [-0.40840704496667274, -0.16231562043547285, -0.16231562043547285, -0.16231562043547285, -0.16231562043547285, -0.16231562043547285]
 }
+tracks/4/type = "audio"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("../../../../SfxManager/KnightEnemyDefeat")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("126_uyxdb")
+}],
+"times": PackedFloat32Array(0)
+}
+tracks/4/use_blend = true
 
 [sub_resource type="Animation" id="Animation_3h58w"]
 resource_name = "Enter"
@@ -2315,12 +2813,65 @@ tracks/3/keys = {
 "values": [-0.24896275]
 }
 
+[sub_resource type="Animation" id="Animation_0o3eo"]
+resource_name = "Start"
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("bone_Head:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(133.075, -98.615)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("bone_Head:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.05061454830783516]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("bone_Head/bone_Jaw:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.31066860685499087]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("bone_Head/bone_Jaw/bone_Tongue:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-0.16231562043547285]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_ipxax"]
 _data = {
 &"Attack": SubResource("Animation_c3wx6"),
 &"Die": SubResource("Animation_h4exs"),
 &"Enter": SubResource("Animation_3h58w"),
-&"RESET": SubResource("Animation_2v47r")
+&"RESET": SubResource("Animation_2v47r"),
+&"Start": SubResource("Animation_0o3eo")
 }
 
 [sub_resource type="Animation" id="Animation_10juh"]
@@ -2459,9 +3010,25 @@ tracks/10/keys = {
 "update": 0,
 "values": [0.47712713, 0.966912405604858, -0.8499753457212383]
 }
+tracks/11/type = "audio"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("../../../../SfxManager/KnightEnemyAttack")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("137_0o3eo")
+}],
+"times": PackedFloat32Array(0.099999994)
+}
+tracks/11/use_blend = true
 
 [sub_resource type="Animation" id="Animation_m2ygb"]
 resource_name = "Die"
+length = 2.3
 step = 0.05
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -2595,6 +3162,21 @@ tracks/10/keys = {
 "update": 0,
 "values": [0.47712713, 0.9180431865490176, -2.5185101106278176]
 }
+tracks/11/type = "audio"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("../../../../SfxManager/KnightEnemyDefeat")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"clips": [{
+"end_offset": 0.91957486,
+"start_offset": 0.0,
+"stream": ExtResource("137_2ocok")
+}],
+"times": PackedFloat32Array(0)
+}
+tracks/11/use_blend = true
 
 [sub_resource type="Animation" id="Animation_ckwfn"]
 resource_name = "Enter"
@@ -2868,12 +3450,149 @@ tracks/10/keys = {
 "values": [0.47712713]
 }
 
+[sub_resource type="Animation" id="Animation_5ldpu"]
+resource_name = "Start"
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("bone_Necrotorso:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-87.705, 5)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("bone_Necrotorso/bone_Necrohead:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-0.6876597252857655]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("bone_Necrotorso/bone_Necrohand:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-15.705, -50.555)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("bone_Necrotorso/bone_Necrohand:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-0.7853981633974483]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("bone_BigBody:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(134.85, -2)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("bone_BigBody/bone_Arm:rotation")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.21642082724729647]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("bone_BigBody/bone_Arm2:rotation")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.5340707511102653]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("bone_BigBody/bone_Head:position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-121, -49.015)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("bone_BigBody/bone_Head:rotation")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.30892327760299615]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("bone_BigBody/bone_Foot:position")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-129.295, -195.43)]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("bone_BigBody/bone_Foot:rotation")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-2.5185101106278176]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_krdob"]
 _data = {
 &"Attack": SubResource("Animation_10juh"),
 &"Die": SubResource("Animation_m2ygb"),
 &"Enter": SubResource("Animation_ckwfn"),
-&"RESET": SubResource("Animation_7g2y2")
+&"RESET": SubResource("Animation_7g2y2"),
+&"Start": SubResource("Animation_5ldpu")
 }
 
 [sub_resource type="Animation" id="Animation_krdob"]
@@ -2977,9 +3696,25 @@ tracks/7/keys = {
 "update": 0,
 "values": [0.4415683007545656, 0.4415683007545656, -0.09773843811168284, -0.09773843811168284]
 }
+tracks/8/type = "audio"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("../../../../SfxManager/KnightEnemyAttack")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("145_wys7x")
+}],
+"times": PackedFloat32Array(0.2)
+}
+tracks/8/use_blend = true
 
 [sub_resource type="Animation" id="Animation_56epy"]
 resource_name = "Die"
+length = 1.2
 step = 0.05
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -3077,6 +3812,21 @@ tracks/7/keys = {
 "update": 0,
 "values": [0.4415683007545656]
 }
+tracks/8/type = "audio"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("../../../../SfxManager/KnightEnemyDefeat")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("145_5ldpu")
+}],
+"times": PackedFloat32Array(0)
+}
+tracks/8/use_blend = true
 
 [sub_resource type="Animation" id="Animation_rociu"]
 resource_name = "Enter"
@@ -3278,12 +4028,113 @@ tracks/7/keys = {
 "values": [0.0]
 }
 
+[sub_resource type="Animation" id="Animation_wys7x"]
+resource_name = "Start"
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("bone_Body:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-26.355, 10)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("bone_Body/bone_Head:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-0.2460914245312009]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("bone_Body/bone_Hand:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-84.42375, -202.59312)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("bone_Body/bone_Hand:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-0.4415683007545656]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("bone_DragonHead:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-509, -829.245)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("bone_DragonHead:rotation")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.112936795]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("bone_DragonHead/bone_DragonJaw:rotation")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-0.7347836150896131]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("bone_DragonHead/bone_DragonJaw/bone_DragonTongue:rotation")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.4415683007545656]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_1tb4x"]
 _data = {
 &"Attack": SubResource("Animation_krdob"),
 &"Die": SubResource("Animation_56epy"),
 &"Enter": SubResource("Animation_rociu"),
-&"RESET": SubResource("Animation_8nd6u")
+&"RESET": SubResource("Animation_8nd6u"),
+&"Start": SubResource("Animation_wys7x")
 }
 
 [sub_resource type="Animation" id="Animation_o737a"]
@@ -3485,10 +4336,25 @@ tracks/12/keys = {
 "update": 0,
 "values": [Vector2(-86, -812), Vector2(-86, -812), Vector2(-398, -289), Vector2(-398, -289), Vector2(-242, -550.5), Vector2(-398, -289), Vector2(-398, -289)]
 }
+tracks/13/type = "audio"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("../../../../SfxManager/KnightEnemyAttack")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"clips": [{
+"end_offset": 0.3201052,
+"start_offset": 0.0,
+"stream": ExtResource("158_kum2i")
+}],
+"times": PackedFloat32Array(0.25)
+}
+tracks/13/use_blend = true
 
 [sub_resource type="Animation" id="Animation_7j6ax"]
 resource_name = "Die"
-length = 1.5
+length = 4.7
 step = 0.05
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -3646,6 +4512,21 @@ tracks/12/keys = {
 "update": 0,
 "values": [Vector2(-86, -812)]
 }
+tracks/13/type = "audio"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("../../../../SfxManager/KnightEnemyDefeat")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("159_74tli")
+}],
+"times": PackedFloat32Array(0)
+}
+tracks/13/use_blend = true
 
 [sub_resource type="Animation" id="Animation_0rgc5"]
 resource_name = "Enter"
@@ -3967,12 +4848,173 @@ tracks/12/keys = {
 "values": [Vector2(-304, -388)]
 }
 
+[sub_resource type="Animation" id="Animation_kum2i"]
+resource_name = "Start"
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("bone_Body:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(155.09, -143.905)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("bone_Body:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.09773843811168284]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("bone_Body/bone_Head:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.29496064358704127]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("bone_Body/bone_Sword:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-13, -79)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("bone_Body/bone_Sword:rotation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-0.2460914245312009]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("bone_Body/bone_Wing:rotation")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-0.27274737]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("bone_Body/bone_Hand:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-97, -126.255)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("bone_Body/bone_Hand:rotation")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-0.8883725892651133]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("bone_Body/bone_Foot_1:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-9.999977, 100.000015)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("bone_Body/bone_Foot_1:rotation")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-0.3177056]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("bone_Body/bone_Foot_2:position")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-25.000008, 98)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("bone_Body/bone_Foot_2:rotation")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-0.41732305]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("bone_Lance:position")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-86, -812)]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_1681s"]
 _data = {
 &"Attack": SubResource("Animation_40txs"),
 &"Die": SubResource("Animation_7j6ax"),
 &"Enter": SubResource("Animation_0rgc5"),
-&"RESET": SubResource("Animation_ajgh3")
+&"RESET": SubResource("Animation_ajgh3"),
+&"Start": SubResource("Animation_kum2i")
 }
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mhc43"]
@@ -5057,6 +6099,9 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_vy5pj")
+bgDungeon = ExtResource("90_0i48d")
+bgMarket = ExtResource("5_hvi37")
+bgTavern = ExtResource("6_ppxtm")
 enemies = Array[ExtResource("2_erwvk")]([ExtResource("3_2w5on"), ExtResource("4_346fj"), ExtResource("5_hwpts"), ExtResource("6_7sj7i"), ExtResource("7_semxg"), ExtResource("8_ep8v8"), ExtResource("9_js5gh"), ExtResource("10_vvjo1")])
 enemiesAnim = [NodePath("Anim/Enemies/Goblin/GoblinAnim"), NodePath("Anim/Enemies/Troll/TrollAnim"), NodePath("Anim/Enemies/Skeleton/SkeletonAnim"), NodePath("Anim/Enemies/Beast/BeastAnim"), NodePath("Anim/Enemies/Dragon/DragonAnim"), NodePath("Anim/Enemies/Necromancer/NecromancerAnim"), NodePath("Anim/Enemies/EvilWizard/EvilWizardAnim"), NodePath("Anim/Enemies/FallenGod/FallenGodAnim")]
 enemiesVisuals = [NodePath("Anim/Enemies/Goblin"), NodePath("Anim/Enemies/Troll"), NodePath("Anim/Enemies/Skeleton"), NodePath("Anim/Enemies/Beast"), NodePath("Anim/Enemies/Dragon"), NodePath("Anim/Enemies/Necromancer"), NodePath("Anim/Enemies/EvilWizard"), NodePath("Anim/Enemies/FallenGod")]
@@ -5229,13 +6274,14 @@ offset_right = 704.0
 offset_bottom = 446.0
 columns = 2
 
-[node name="Fight" type="TextureButton" parent="Knight/GridContainer" unique_id=84898763]
+[node name="Fight" type="TextureButton" parent="Knight/GridContainer" unique_id=84898763 node_paths=PackedStringArray("sfxPlayer")]
 layout_mode = 2
 action_mode = 0
 texture_normal = ExtResource("60_ulc4m")
 texture_pressed = ExtResource("61_eef1t")
 texture_hover = ExtResource("62_siwj1")
 script = ExtResource("7_jw32o")
+sfxPlayer = NodePath("../../../SfxManager")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Knight/GridContainer/Fight" unique_id=77166529]
 layout_mode = 1
@@ -5258,7 +6304,7 @@ text = "FIGHT GOBLIN"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Tavern" type="TextureButton" parent="Knight/GridContainer" unique_id=1031971883]
+[node name="Tavern" type="TextureButton" parent="Knight/GridContainer" unique_id=1031971883 node_paths=PackedStringArray("sfxPlayer")]
 layout_mode = 2
 action_mode = 0
 texture_normal = ExtResource("64_w1ool")
@@ -5266,6 +6312,7 @@ texture_pressed = ExtResource("65_cbpwj")
 texture_hover = ExtResource("66_jw3lw")
 texture_disabled = ExtResource("70_0y6do")
 script = ExtResource("8_50glp")
+sfxPlayer = NodePath("../../../SfxManager")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Knight/GridContainer/Tavern" unique_id=452507808]
 layout_mode = 1
@@ -5289,13 +6336,14 @@ text = "GO TO THE TAVERN
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Rest" type="TextureButton" parent="Knight/GridContainer" unique_id=1397711749]
+[node name="Rest" type="TextureButton" parent="Knight/GridContainer" unique_id=1397711749 node_paths=PackedStringArray("sfxPlayer")]
 layout_mode = 2
 action_mode = 0
 texture_normal = ExtResource("4_vy5pj")
 texture_pressed = ExtResource("5_bmxlf")
 texture_hover = ExtResource("6_4kpch")
 script = ExtResource("10_bmxlf")
+sfxPlayer = NodePath("../../../SfxManager")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Knight/GridContainer/Rest" unique_id=102552332]
 layout_mode = 1
@@ -5318,7 +6366,7 @@ text = "HEAL"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Market" type="TextureButton" parent="Knight/GridContainer" unique_id=779236939]
+[node name="Market" type="TextureButton" parent="Knight/GridContainer" unique_id=779236939 node_paths=PackedStringArray("sfxPlayer")]
 layout_mode = 2
 action_mode = 0
 texture_normal = ExtResource("72_h7ft5")
@@ -5326,6 +6374,7 @@ texture_pressed = ExtResource("73_cchgx")
 texture_hover = ExtResource("74_6jw1o")
 texture_disabled = ExtResource("79_28d8q")
 script = ExtResource("14_1p5hy")
+sfxPlayer = NodePath("../../../SfxManager")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Knight/GridContainer/Market" unique_id=1806622675]
 layout_mode = 1
@@ -5458,13 +6507,14 @@ offset_bottom = -140.0
 grow_horizontal = 2
 grow_vertical = 0
 
-[node name="Decline" type="TextureButton" parent="Knight/Deal/Options" unique_id=1772219915]
+[node name="Decline" type="TextureButton" parent="Knight/Deal/Options" unique_id=1772219915 node_paths=PackedStringArray("sfxPlayer")]
 z_index = 1
 layout_mode = 2
 texture_normal = ExtResource("33_x3rx7")
 texture_pressed = ExtResource("34_6heos")
 texture_hover = ExtResource("35_vvnwx")
 script = ExtResource("7_jw32o")
+sfxPlayer = NodePath("../../../../SfxManager")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Knight/Deal/Options/Decline" unique_id=2045586316]
 z_index = 1
@@ -5487,13 +6537,14 @@ text = "DECLINE"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Accept" type="TextureButton" parent="Knight/Deal/Options" unique_id=940582894]
+[node name="Accept" type="TextureButton" parent="Knight/Deal/Options" unique_id=940582894 node_paths=PackedStringArray("sfxPlayer")]
 z_index = 1
 layout_mode = 2
 texture_normal = ExtResource("33_x3rx7")
 texture_pressed = ExtResource("34_6heos")
 texture_hover = ExtResource("35_vvnwx")
 script = ExtResource("7_jw32o")
+sfxPlayer = NodePath("../../../../SfxManager")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Knight/Deal/Options/Accept" unique_id=1450316257]
 z_index = 1
@@ -5649,6 +6700,17 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 texture = ExtResource("15_h1m7h")
+
+[node name="Enviro" type="TextureRect" parent="Knight/BG" unique_id=1107379299]
+z_index = -200
+z_as_relative = false
+layout_mode = 0
+offset_left = 360.0
+offset_top = 260.0
+offset_right = 959.0
+offset_bottom = 859.0
+mouse_filter = 2
+texture = ExtResource("90_0i48d")
 
 [node name="EnemyDamage" type="RichTextLabel" parent="Knight/BG" unique_id=1613170147]
 visible = false
@@ -5990,7 +7052,6 @@ offset_right = 733.0
 offset_bottom = 496.0
 
 [node name="Goblin" type="Control" parent="Knight/Anim/Enemies" unique_id=1427329040]
-visible = false
 anchors_preset = 0
 offset_left = -155.0
 offset_right = -155.0
@@ -6053,7 +7114,9 @@ mouse_filter = 2
 texture = ExtResource("97_lt6nf")
 
 [node name="GoblinAnim" type="AnimationPlayer" parent="Knight/Anim/Enemies/Goblin" unique_id=369426759]
+audio_max_polyphony = 1
 libraries/ = SubResource("AnimationLibrary_hwg2s")
+autoplay = &"Start"
 
 [node name="Troll" type="Control" parent="Knight/Anim/Enemies" unique_id=1036428597]
 visible = false
@@ -6141,6 +7204,7 @@ texture = ExtResource("100_tnt7p")
 
 [node name="TrollAnim" type="AnimationPlayer" parent="Knight/Anim/Enemies/Troll" unique_id=1008486085]
 libraries/ = SubResource("AnimationLibrary_qmo2n")
+autoplay = &"Start"
 
 [node name="Skeleton" type="Control" parent="Knight/Anim/Enemies" unique_id=1889079264]
 visible = false
@@ -6207,6 +7271,7 @@ texture = ExtResource("104_qmo2n")
 
 [node name="SkeletonAnim" type="AnimationPlayer" parent="Knight/Anim/Enemies/Skeleton" unique_id=814463006]
 libraries/ = SubResource("AnimationLibrary_ghvh6")
+autoplay = &"Start"
 
 [node name="Beast" type="Control" parent="Knight/Anim/Enemies" unique_id=2121948161]
 visible = false
@@ -6285,7 +7350,9 @@ mouse_filter = 2
 texture = ExtResource("108_ghvh6")
 
 [node name="BeastAnim" type="AnimationPlayer" parent="Knight/Anim/Enemies/Beast" unique_id=1434310384]
+audio_max_polyphony = 1
 libraries/ = SubResource("AnimationLibrary_c3wx6")
+autoplay = &"Start"
 
 [node name="Dragon" type="Control" parent="Knight/Anim/Enemies" unique_id=1749534197]
 visible = false
@@ -6350,6 +7417,7 @@ texture = ExtResource("111_g6gwx")
 
 [node name="DragonAnim" type="AnimationPlayer" parent="Knight/Anim/Enemies/Dragon" unique_id=850004600]
 libraries/ = SubResource("AnimationLibrary_ipxax")
+autoplay = &"Start"
 
 [node name="Necromancer" type="Control" parent="Knight/Anim/Enemies" unique_id=1531622227]
 visible = false
@@ -6516,6 +7584,7 @@ texture = ExtResource("120_epesh")
 
 [node name="NecromancerAnim" type="AnimationPlayer" parent="Knight/Anim/Enemies/Necromancer" unique_id=1986032891]
 libraries/ = SubResource("AnimationLibrary_krdob")
+autoplay = &"Start"
 
 [node name="EvilWizard" type="Control" parent="Knight/Anim/Enemies" unique_id=1016156773]
 visible = false
@@ -6633,9 +7702,9 @@ texture = ExtResource("126_ckwfn")
 
 [node name="EvilWizardAnim" type="AnimationPlayer" parent="Knight/Anim/Enemies/EvilWizard" unique_id=257110328]
 libraries/ = SubResource("AnimationLibrary_1tb4x")
+autoplay = &"Start"
 
 [node name="FallenGod" type="Control" parent="Knight/Anim/Enemies" unique_id=925389186]
-visible = false
 anchors_preset = 0
 
 [node name="bone_Body" type="Control" parent="Knight/Anim/Enemies/FallenGod" unique_id=1917965697]
@@ -6804,6 +7873,7 @@ autoplay = &"Blink"
 
 [node name="FallenGodAnim" type="AnimationPlayer" parent="Knight/Anim/Enemies/FallenGod" unique_id=1072869507]
 libraries/ = SubResource("AnimationLibrary_1681s")
+autoplay = &"Start"
 
 [node name="Gamer" type="Control" parent="." unique_id=87661639]
 layout_mode = 3
@@ -6815,6 +7885,12 @@ offset_right = 2085.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("81_cchgx")
+bgGym = ExtResource("188_ppxtm")
+bgBedroom = ExtResource("154_4qiut")
+bgStudyroom = ExtResource("155_uyxdb")
+bgGameRoom = ExtResource("156_o3mur")
+bgDisco = ExtResource("157_2ocok")
+bgKitchen = ExtResource("158_0o3eo")
 
 [node name="TitleHolder" type="Panel" parent="Gamer" unique_id=1106752280]
 layout_mode = 0
@@ -6936,13 +8012,14 @@ offset_right = 704.0
 offset_bottom = 446.0
 columns = 2
 
-[node name="GoWork" type="TextureButton" parent="Gamer/GridContainer" unique_id=1239555388]
+[node name="GoWork" type="TextureButton" parent="Gamer/GridContainer" unique_id=1239555388 node_paths=PackedStringArray("sfxPlayer")]
 layout_mode = 2
 action_mode = 0
 texture_normal = ExtResource("72_as1io")
 texture_pressed = ExtResource("73_xd5mi")
 texture_hover = ExtResource("74_tt1x2")
-script = ExtResource("7_jw32o")
+script = ExtResource("157_22l73")
+sfxPlayer = NodePath("../../../SfxManager")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Gamer/GridContainer/GoWork" unique_id=573396193]
 layout_mode = 1
@@ -6964,14 +8041,15 @@ WORK"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Study" type="TextureButton" parent="Gamer/GridContainer" unique_id=75088187]
+[node name="Study" type="TextureButton" parent="Gamer/GridContainer" unique_id=75088187 node_paths=PackedStringArray("sfxPlayer")]
 layout_mode = 2
 action_mode = 0
 texture_normal = ExtResource("84_k6daw")
 texture_pressed = ExtResource("85_05y1e")
 texture_hover = ExtResource("86_tjlwc")
 texture_disabled = ExtResource("154_5g1k7")
-script = ExtResource("8_50glp")
+script = ExtResource("157_22l73")
+sfxPlayer = NodePath("../../../SfxManager")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Gamer/GridContainer/Study" unique_id=697278222]
 layout_mode = 1
@@ -6994,13 +8072,14 @@ text = "STUDY
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Rest" type="TextureButton" parent="Gamer/GridContainer" unique_id=1949896229]
+[node name="Rest" type="TextureButton" parent="Gamer/GridContainer" unique_id=1949896229 node_paths=PackedStringArray("sfxPlayer")]
 layout_mode = 2
 action_mode = 0
 texture_normal = ExtResource("84_ok4ge")
 texture_pressed = ExtResource("85_e2umn")
 texture_hover = ExtResource("86_k6daw")
-script = ExtResource("14_1p5hy")
+script = ExtResource("157_22l73")
+sfxPlayer = NodePath("../../../SfxManager")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Gamer/GridContainer/Rest" unique_id=863715757]
 layout_mode = 1
@@ -7021,13 +8100,14 @@ text = "REST"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Game" type="TextureButton" parent="Gamer/GridContainer" unique_id=613283122]
+[node name="Game" type="TextureButton" parent="Gamer/GridContainer" unique_id=613283122 node_paths=PackedStringArray("sfxPlayer")]
 layout_mode = 2
 action_mode = 0
 texture_normal = ExtResource("87_05y1e")
 texture_pressed = ExtResource("88_tjlwc")
 texture_hover = ExtResource("89_5ltlj")
-script = ExtResource("10_bmxlf")
+script = ExtResource("157_22l73")
+sfxPlayer = NodePath("../../../SfxManager")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Gamer/GridContainer/Game" unique_id=926404011]
 layout_mode = 1
@@ -7048,14 +8128,15 @@ text = "PLAY VIDEOGAMES"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="WorkOut" type="TextureButton" parent="Gamer/GridContainer" unique_id=679804811]
+[node name="WorkOut" type="TextureButton" parent="Gamer/GridContainer" unique_id=679804811 node_paths=PackedStringArray("sfxPlayer")]
 layout_mode = 2
 action_mode = 0
 texture_normal = ExtResource("93_5ltlj")
 texture_pressed = ExtResource("94_om687")
 texture_hover = ExtResource("95_a5sy2")
 texture_disabled = ExtResource("164_o737a")
-script = ExtResource("10_bmxlf")
+script = ExtResource("157_22l73")
+sfxPlayer = NodePath("../../../SfxManager")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Gamer/GridContainer/WorkOut" unique_id=69662574]
 layout_mode = 1
@@ -7077,14 +8158,15 @@ text = "WORK OUT
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="GoOut" type="TextureButton" parent="Gamer/GridContainer" unique_id=1424674562]
+[node name="GoOut" type="TextureButton" parent="Gamer/GridContainer" unique_id=1424674562 node_paths=PackedStringArray("sfxPlayer")]
 layout_mode = 2
 action_mode = 0
 texture_normal = ExtResource("90_om687")
 texture_pressed = ExtResource("91_a5sy2")
 texture_hover = ExtResource("92_ulc4m")
 texture_disabled = ExtResource("168_8g4l6")
-script = ExtResource("10_bmxlf")
+script = ExtResource("157_22l73")
+sfxPlayer = NodePath("../../../SfxManager")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Gamer/GridContainer/GoOut" unique_id=1313765481]
 layout_mode = 1
@@ -7172,6 +8254,129 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 texture = ExtResource("84_hjjnx")
+
+[node name="DollarsUp" type="RichTextLabel" parent="Gamer/BG" unique_id=1882301396]
+visible = false
+z_index = 10
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 422.0
+offset_top = 795.0
+offset_right = -1046.0
+offset_bottom = -162.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_colors/default_color = Color(0.14420429, 0.53210896, 0.09478886, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 15
+theme_override_font_sizes/normal_font_size = 64
+text = "-50"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("84_har0a")
+
+[node name="DollarsDown" type="RichTextLabel" parent="Gamer/BG" unique_id=1664661376]
+visible = false
+z_index = 10
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 426.0
+offset_top = 794.0
+offset_right = -1047.0
+offset_bottom = -159.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_colors/default_color = Color(0.7176471, 0.39215687, 0.3137255, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 15
+theme_override_font_sizes/normal_font_size = 64
+text = "-50"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("84_har0a")
+
+[node name="Energy" type="RichTextLabel" parent="Gamer/BG" unique_id=398075893]
+visible = false
+z_index = 10
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1669.0
+offset_top = 238.0
+offset_right = 22.0
+offset_bottom = -715.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_colors/default_color = Color(0.23137255, 0.14117648, 0.12941177, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 15
+theme_override_font_sizes/normal_font_size = 64
+text = "-50"
+vertical_alignment = 1
+script = ExtResource("84_har0a")
+
+[node name="Happiness" type="RichTextLabel" parent="Gamer/BG" unique_id=1464635086]
+visible = false
+z_index = 10
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1644.0
+offset_top = 290.0
+offset_right = -3.0
+offset_bottom = -663.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_colors/default_color = Color(0.23137255, 0.14117648, 0.12941177, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 15
+theme_override_font_sizes/normal_font_size = 64
+text = "-50"
+vertical_alignment = 1
+script = ExtResource("84_har0a")
+
+[node name="Social" type="RichTextLabel" parent="Gamer/BG" unique_id=71227198]
+visible = false
+z_index = 10
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1613.0
+offset_top = 341.0
+offset_right = -34.0
+offset_bottom = -612.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_colors/default_color = Color(0.23137255, 0.14117648, 0.12941177, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 15
+theme_override_font_sizes/normal_font_size = 64
+text = "-50"
+vertical_alignment = 1
+script = ExtResource("84_har0a")
+
+[node name="Enviro" type="TextureRect" parent="Gamer/BG" unique_id=1643944506]
+z_index = -200
+z_as_relative = false
+layout_mode = 0
+offset_left = 360.0
+offset_top = 260.0
+offset_right = 959.0
+offset_bottom = 859.0
+mouse_filter = 2
+texture = ExtResource("188_ppxtm")
 
 [node name="Anim" type="Control" parent="Gamer" unique_id=685291845]
 anchors_preset = 0
@@ -7311,7 +8516,46 @@ texture = ExtResource("171_o737a")
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Gamer/Anim/Gamer" unique_id=808320430]
 libraries/ = SubResource("AnimationLibrary_22l73")
 
+[node name="SfxManager" type="Node" parent="." unique_id=1054811724]
+script = ExtResource("182_xxmk3")
+
+[node name="KnightEnterButton" type="AudioStreamPlayer" parent="SfxManager" unique_id=768650361]
+stream = ExtResource("184_yhm6q")
+volume_db = 3.0
+pitch_scale = 5.0
+
+[node name="KnightPressButton" type="AudioStreamPlayer" parent="SfxManager" unique_id=1745112539]
+stream = ExtResource("183_cf1h0")
+volume_db = -10.0
+pitch_scale = 0.8
+
+[node name="KnightEnemyAttack" type="AudioStreamPlayer" parent="SfxManager" unique_id=418055804]
+
+[node name="KnightEnemyDefeat" type="AudioStreamPlayer" parent="SfxManager" unique_id=2026521769]
+
+[node name="KnightLevelUp" type="AudioStreamPlayer" parent="SfxManager" unique_id=780438554]
+stream = ExtResource("192_4yt88")
+
+[node name="GamerEnterButton" type="AudioStreamPlayer" parent="SfxManager" unique_id=1593386332]
+
+[node name="GamerPressButton" type="AudioStreamPlayer" parent="SfxManager" unique_id=1284351282]
+stream = ExtResource("183_dlu6c")
+max_polyphony = 8
+
+[node name="MusicManager" type="Node" parent="." unique_id=1840444694]
+script = ExtResource("194_qseld")
+
+[node name="KnightMusic" type="AudioStreamPlayer" parent="MusicManager" unique_id=537755886]
+stream = ExtResource("194_33aut")
+volume_db = -10.0
+autoplay = true
+
+[node name="GamerMusic" type="AudioStreamPlayer" parent="MusicManager" unique_id=1363153953]
+stream = ExtResource("195_w3oh2")
+volume_db = -10.0
+
 [connection signal="pressed" from="Knight/TitleHolder/Mover" to="Knight/TitleHolder/Mover" method="_on_pressed"]
+[connection signal="pressed" from="Knight/TitleHolder/Mover" to="MusicManager" method="_on_knight_mover_pressed"]
 [connection signal="button_down" from="Knight/GridContainer/Fight" to="Knight/GridContainer/Fight" method="_on_button_down"]
 [connection signal="button_up" from="Knight/GridContainer/Fight" to="Knight/GridContainer/Fight" method="_on_button_up"]
 [connection signal="mouse_entered" from="Knight/GridContainer/Fight" to="Knight/GridContainer/Fight" method="_on_mouse_entered"]
@@ -7350,6 +8594,7 @@ libraries/ = SubResource("AnimationLibrary_22l73")
 [connection signal="visibility_changed" from="Knight/BG/GoldDown" to="Knight/BG/GoldDown" method="_on_visibility_changed"]
 [connection signal="pressed" from="Gamer/TitleHolder/Mover" to="Knight" method="_on_gamerMover_pressed"]
 [connection signal="pressed" from="Gamer/TitleHolder/Mover" to="Gamer/TitleHolder/Mover" method="_on_pressed"]
+[connection signal="pressed" from="Gamer/TitleHolder/Mover" to="MusicManager" method="_on_gamer_mover_pressed"]
 [connection signal="button_down" from="Gamer/GridContainer/GoWork" to="Gamer/GridContainer/GoWork" method="_on_button_down"]
 [connection signal="button_up" from="Gamer/GridContainer/GoWork" to="Gamer/GridContainer/GoWork" method="_on_button_up"]
 [connection signal="mouse_entered" from="Gamer/GridContainer/GoWork" to="Gamer/GridContainer/GoWork" method="_on_mouse_entered"]
@@ -7380,3 +8625,8 @@ libraries/ = SubResource("AnimationLibrary_22l73")
 [connection signal="mouse_entered" from="Gamer/GridContainer/GoOut" to="Gamer/GridContainer/GoOut" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="Gamer/GridContainer/GoOut" to="Gamer/GridContainer/GoOut" method="_on_mouse_exited"]
 [connection signal="pressed" from="Gamer/GridContainer/GoOut" to="Gamer" method="_on_go_out_pressed"]
+[connection signal="visibility_changed" from="Gamer/BG/DollarsUp" to="Gamer/BG/DollarsUp" method="_on_visibility_changed"]
+[connection signal="visibility_changed" from="Gamer/BG/DollarsDown" to="Gamer/BG/DollarsDown" method="_on_visibility_changed"]
+[connection signal="visibility_changed" from="Gamer/BG/Energy" to="Gamer/BG/Energy" method="_on_visibility_changed"]
+[connection signal="visibility_changed" from="Gamer/BG/Happiness" to="Gamer/BG/Happiness" method="_on_visibility_changed"]
+[connection signal="visibility_changed" from="Gamer/BG/Social" to="Gamer/BG/Social" method="_on_visibility_changed"]

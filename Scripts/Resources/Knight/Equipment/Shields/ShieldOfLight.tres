@@ -9,6 +9,6 @@ price = 850
 priceIsInDollars = true
 name = "Shield of light"
 addedDefense = 25
-addedHealing = 40
+addedHealing = 45
 visual = ExtResource("2_i6wx4")
 metadata/_custom_type_script = "uid://ckiaueptwpugt"

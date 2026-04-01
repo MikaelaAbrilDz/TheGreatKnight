@@ -9,6 +9,6 @@ price = 1000
 priceIsInDollars = true
 name = "Ancient magic shield"
 addedDefense = 30
-addedHealing = 50
+addedHealing = 55
 visual = ExtResource("2_unvs4")
 metadata/_custom_type_script = "uid://ckiaueptwpugt"

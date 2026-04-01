@@ -3,6 +3,10 @@ class_name KnightManager
 
 const tavernPrice = 100
 
+@export var bgDungeon : Texture2D
+@export var bgMarket : Texture2D
+@export var bgTavern : Texture2D
+
 @export var enemies : Array[Enemy]
 @onready var currentEnemy : Enemy = enemies[0]
 @onready var currentEnemyLife : int = enemies[0].life
@@ -45,6 +49,8 @@ var nextObj : Resource
 @onready var currentShieldImage = $Inventory/Shield/TextureRect
 @onready var currentSwordImage = $Inventory/Sword/TextureRect
 
+@onready var sfxManager : SfxManager = $"../SfxManager"
+
 enum KnightStatus {none, fighting, resting, tavern, market}
 
 var knightMaxLife : int = 100
@@ -77,7 +83,6 @@ func _ready() -> void:
 	UpdateStatsNumbers()
 	for i in enemiesAnim:
 		i.animation_set_next("Enter", "Attack")
-		i.play("Die")
 	for i in enemiesVisuals: i.visible = false
 	$Anim/Enemies/Goblin/GoblinAnim.speed_scale = 0
 	$Anim/Enemies/Goblin/GoblinAnim.play("Enter")
@@ -105,6 +110,7 @@ func _process(delta: float) -> void:
 func _on_fight_pressed() -> void:
 	knightCurrentStatus = KnightStatus.fighting
 	anim.play("Fight")
+	$BG/Enviro.texture = bgDungeon
 	ChangeEnemyLife(min(-knightAttack - currentSword.addedAttack + currentEnemy.armor, 0))
 	
 	for i in enemiesVisuals: i.visible = true
@@ -122,6 +128,7 @@ func _on_tavern_pressed() -> void:
 	if gold >= tavernPrice:
 		knightCurrentStatus = KnightStatus.tavern
 		anim.play("Party")
+		$BG/Enviro.texture = bgTavern
 		ChangeGold(-tavernPrice)
 		ChangeKnightSocial(knightCharisma * 2 + currentHelmet.addedCharisma)
 		
@@ -132,6 +139,7 @@ func _on_market_pressed() -> void:
 	if gold >= marketPrice:
 		knightCurrentStatus = KnightStatus.market
 		anim.play("Market")
+		$BG/Enviro.texture = bgMarket
 		ChangeGold(-marketPrice)
 		marketPrice = (max(knightLevel/2, 1)) * (randi() % 49 + 1) + (gold * 0.1)
 		marketText.text = "GO TO THE MARKET \n(" + str(marketPrice) + " GOLD)" 
@@ -238,6 +246,7 @@ func UpdateInventoryImages():
 	currentHelmetImage.texture = currentHelmet.visual
 
 func LevelUp():
+	sfxManager.PlaySfx(SfxManager.sfx.KnightLevelUp)
 	knightLevel += 1
 	knightAttack += 1
 	$BG/KnightLevelUp.visible = true
@@ -264,14 +273,18 @@ func FirstTransition():
 		$Deal/Options/Decline.visible = false
 		knightCurrentStatus = KnightStatus.tavern
 		anim.play("Market")
+		$BG/Enviro.texture = bgMarket
 		await get_tree().create_timer(0.2).timeout
 		knightCurrentStatus = KnightStatus.tavern
 		anim.play("Market")
+		$BG/Enviro.texture = bgMarket
 		await get_tree().create_timer(5).timeout
 		knightCurrentStatus = KnightStatus.tavern
 		anim.play("Market")
+		$BG/Enviro.texture = bgMarket
 		for i in enemiesVisuals: i.visible = false
 		for i in enemiesAnim: i.speed_scale = 0
+		$"../MusicManager".ChangeMusicToGamer()
 		$"../Camera2D".Move(Vector2(2086, 0))
 		$"..".FirstTransition()
 
@@ -345,6 +358,9 @@ func GetDeal(dealObj : Resource):
 func AcceptDeal():
 	if midTransition and gamerManager.dollars < nextObj.price:
 		$"../Camera2D".Move(Vector2(2086, 0))
+		$"../MusicManager".ChangeMusicToGamer()
+		for i in enemiesVisuals: i.visible = false
+		for i in enemiesAnim: i.speed_scale = 0
 	else:
 		midTransition = false
 		$Deal/Options/Decline.visible = true
@@ -389,6 +405,6 @@ func WinGame():
 	get_tree().change_scene_to_file("res://Scenes/Win.tscn")
 
 func LoseGame():
-	
-	await get_tree().create_timer(1).timeout
-	get_tree().change_scene_to_file("res://Scenes/Lose.tscn")
+	await get_tree().create_timer(0.3).timeout
+	if knightCurrentLife == 0 or knightCurrentSocial == 0:
+		get_tree().change_scene_to_file("res://Scenes/Lose.tscn")

@@ -5,6 +5,10 @@ var isPressed : bool
 var isHovered : bool
 
 var text : RichTextLabel
+@export var sfxPlayer : SfxManager
+
+func _ready() -> void:
+	text = $RichTextLabel
 
 func MoveText():
 	if isHovered:

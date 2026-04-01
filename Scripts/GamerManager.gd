@@ -1,6 +1,13 @@
 extends Control
 class_name GamerManager
 
+@export var bgGym : Texture2D
+@export var bgBedroom : Texture2D
+@export var bgStudyroom : Texture2D
+@export var bgGameRoom : Texture2D
+@export var bgDisco : Texture2D
+@export var bgKitchen : Texture2D
+
 @onready var gamerAnim = $Anim/Gamer/AnimationPlayer
 @onready var healthStat = $Stats/Health
 @onready var intelligenceStat = $Stats/Intelligence
@@ -69,6 +76,7 @@ func _process(delta: float) -> void:
 
 func _on_go_work_pressed() -> void:
 	gamerAnim.play("Work")
+	$BG/Enviro.texture = bgKitchen
 	gamerCurrentStatus = GamerStatus.working
 	ChangeDollars(5 + intelligence)
 
@@ -76,6 +84,7 @@ func _on_go_work_pressed() -> void:
 func _on_study_pressed() -> void:
 		if dollars >= 50 * max(float(intelligence/2),1,1):
 			gamerAnim.play("Study")
+			$BG/Enviro.texture = bgStudyroom
 			ChangeDollars(-(50 * max(float(intelligence/2),1)))
 			gamerCurrentStatus = GamerStatus.studying
 			ChangeIntelligence(5)
@@ -83,12 +92,14 @@ func _on_study_pressed() -> void:
 
 func _on_rest_pressed() -> void:
 	gamerAnim.play("Rest")
+	$BG/Enviro.texture = bgBedroom
 	gamerCurrentStatus = GamerStatus.resting
 	ChangeLife(1 + health / 10)
 
 
 func _on_game_pressed() -> void:
 	gamerAnim.play("PlayVideogames")
+	$BG/Enviro.texture = bgGameRoom
 	gamerCurrentStatus = GamerStatus.gaming
 	ChangeHappiness(5)
 
@@ -96,6 +107,7 @@ func _on_game_pressed() -> void:
 func _on_work_out_pressed() -> void:
 	if dollars >= 25:
 		gamerAnim.play("WorkOut")
+		$BG/Enviro.texture = bgGym
 		ChangeDollars(-25)
 		gamerCurrentStatus = GamerStatus.workingOut
 		ChangeHealth(5)
@@ -104,11 +116,20 @@ func _on_work_out_pressed() -> void:
 func _on_go_out_pressed() -> void:
 	if dollars >= 35:
 		gamerAnim.play("GoOut")
+		$BG/Enviro.texture = bgDisco
 		ChangeDollars(-35)
 		gamerCurrentStatus = GamerStatus.goingOut
 		ChangeSocial(5 + charisma / 10)
 
 func ChangeLife(lifeChange : int):
+	if lifeChange > 0:
+		$BG/Energy.text = "+ " + str(lifeChange)
+		if not $BG/Energy.visible : $BG/Energy.visible = true
+		else: $BG/Energy.ResetStuff()
+	elif lifeChange < 0:
+		$BG/Energy.text = str(lifeChange)
+		if not $BG/Energy.visible : $BG/Energy.visible = true
+		else: $BG/Energy.ResetStuff()
 	currentLife += lifeChange
 	if currentLife > maxLife : currentLife = maxLife
 	elif currentLife <= 0 :
@@ -118,6 +139,14 @@ func ChangeLife(lifeChange : int):
 	UpdateLifeBar()
 
 func ChangeSocial(socialChange : int):
+	if socialChange > 0:
+		$BG/Social.text = "+ " + str(socialChange)
+		if not $BG/Social.visible : $BG/Social.visible = true
+		else: $BG/Social.ResetStuff()
+	elif socialChange < 0:
+		$BG/Social.text = str(socialChange)
+		if not $BG/Social.visible : $BG/Social.visible = true
+		else: $BG/Social.ResetStuff()
 	currentSocial += socialChange
 	if currentSocial > maxSocial : currentSocial = maxSocial
 	elif currentSocial <= 0 :
@@ -127,6 +156,14 @@ func ChangeSocial(socialChange : int):
 	UpdateSocialBar()
 
 func ChangeHappiness(happinessChange : int):
+	if happinessChange > 0:
+		$BG/Happiness.text = "+ " + str(happinessChange)
+		if not $BG/Happiness.visible : $BG/Happiness.visible = true
+		else: $BG/Happiness.ResetStuff()
+	elif happinessChange < 0:
+		$BG/Happiness.text = str(happinessChange)
+		if not $BG/Happiness.visible : $BG/Happiness.visible = true
+		else: $BG/Happiness.ResetStuff()
 	currentHappiness += happinessChange
 	if currentHappiness > maxHappiness : currentHappiness = maxHappiness
 	elif currentHappiness <= 0 :
@@ -136,6 +173,14 @@ func ChangeHappiness(happinessChange : int):
 	UpdateHappinessBar()
 
 func ChangeDollars(dollarChange : int):
+	if dollarChange > 0:
+		$BG/DollarsUp.text = "+ " + str(dollarChange)
+		if not $BG/DollarsUp.visible : $BG/DollarsUp.visible = true
+		else: $BG/DollarsUp.ResetStuff()
+	elif dollarChange < 0:
+		$BG/DollarsDown.text = str(dollarChange)
+		if not $BG/DollarsDown.visible : $BG/DollarsDown.visible = true
+		else: $BG/DollarsDown.ResetStuff()
 	dollars += dollarChange
 	if dollars < 0 : dollars = 0
 	UpdateDollarsNumber()
